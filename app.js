@@ -4,7 +4,7 @@
 
   /* Посилання, які надає оргкомітет. Порожнє значення = кнопка веде до блоку контактів. */
   var LINKS = {
-    register: '', // Google Форма реєстрації
+    register: 'https://forms.gle/Vs5mRtGasJQqnzBX8', // Google Форма реєстрації
     pfe: ''       // сайт фундації Pray for Europe
   };
 
