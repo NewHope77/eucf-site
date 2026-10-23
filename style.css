@@ -309,6 +309,9 @@ p { text-wrap: pretty; }
 .speaker--more p { color: rgba(255, 255, 255, .86); }
 
 /* Gallery */
+/* video keeps its native 848×480 so it is never upscaled or cropped */
+.video { max-width: 848px; margin: 0 auto 32px; border-radius: 22px; overflow: hidden; background: #000; box-shadow: var(--shadow-lg); }
+.video video { display: block; width: 100%; height: auto; }
 /* masonry: frames of any orientation stay whole */
 .gallery { columns: 4; column-gap: 14px; }
 .gallery__item { position: relative; display: block; width: 100%; margin: 0 0 14px; break-inside: avoid; border-radius: 18px; overflow: hidden; border: 0; padding: 0; background: var(--plate); cursor: zoom-in; }
@@ -472,6 +475,7 @@ a.contact-card:hover { border-color: var(--accent); transform: translateY(-3px);
   .avatar__face { font-size: 24px; }
   .gallery { columns: 2; column-gap: 10px; }
   .gallery__item { margin-bottom: 10px; border-radius: 14px; }
+  .video { border-radius: 16px; margin-bottom: 20px; }
   .media-list { grid-template-columns: 1fr 1fr; gap: 10px; }
   .partners { grid-template-columns: 1fr; }
   .partner { flex-direction: row; align-items: center; padding: 18px; }

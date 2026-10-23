@@ -14,7 +14,7 @@
   document.documentElement.classList.add('js');
   try { var t = localStorage.getItem('theme'); if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
 </script>
-<link rel="stylesheet" href="style.css?v=4">
+<link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
 
@@ -337,6 +337,11 @@
         <p>Фотозвіт з минулорічних форумів та Європейсько-Українських молитовних сніданків у Брюсселі.</p>
       </div>
     </div>
+    <figure class="video" data-reveal>
+      <video controls playsinline preload="metadata" poster="media/forum-video-poster.webp" width="848" height="480" aria-label="Відео з минулорічного форуму">
+        <source src="media/forum-video.mp4" type="video/mp4">
+      </video>
+    </figure>
     <div class="gallery" data-gallery>
       <button class="gallery__item" type="button" data-full="img/gallery/forum-13.webp" data-reveal><img src="img/gallery/forum-13-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 1 з 50" width="720" height="480" loading="lazy"></button>
       <button class="gallery__item" type="button" data-full="img/gallery/forum-01.webp" data-reveal><img src="img/gallery/forum-01-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 2 з 50" width="720" height="480" loading="lazy"></button>
