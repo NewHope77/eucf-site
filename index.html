@@ -14,7 +14,7 @@
   document.documentElement.classList.add('js');
   try { var t = localStorage.getItem('theme'); if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
 </script>
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 
@@ -338,20 +338,60 @@
       </div>
     </div>
     <div class="gallery" data-gallery>
-      <button class="gallery__item gallery__item--wide" type="button" data-full="img/gallery/forum-13.webp" data-reveal><img src="img/gallery/forum-13.webp" alt="Фотозвіт з минулорічних форумів — фото 1 з 13" width="1800" height="1200" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-01.webp" data-reveal><img src="img/gallery/forum-01-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 2 з 13" width="720" height="480" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-02.webp" data-reveal><img src="img/gallery/forum-02-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 3 з 13" width="720" height="480" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-03.webp" data-reveal><img src="img/gallery/forum-03-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 4 з 13" width="720" height="480" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-04.webp" data-reveal><img src="img/gallery/forum-04-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 5 з 13" width="720" height="480" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-06.webp" data-reveal><img src="img/gallery/forum-06-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 6 з 13" width="720" height="480" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-08.webp" data-reveal><img src="img/gallery/forum-08-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 7 з 13" width="720" height="480" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-11.webp" data-reveal><img src="img/gallery/forum-11-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 8 з 13" width="720" height="480" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-07.webp" data-reveal><img src="img/gallery/forum-07-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 9 з 13" width="720" height="480" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-09.webp" data-reveal><img src="img/gallery/forum-09-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 10 з 13" width="720" height="480" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-12.webp" data-reveal><img src="img/gallery/forum-12-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 11 з 13" width="720" height="480" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-05.webp" data-reveal><img src="img/gallery/forum-05-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 12 з 13" width="720" height="480" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-10.webp" data-reveal><img src="img/gallery/forum-10-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 13 з 13" width="720" height="480" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-13.webp" data-reveal><img src="img/gallery/forum-13-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 1 з 50" width="720" height="480" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-01.webp" data-reveal><img src="img/gallery/forum-01-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 2 з 50" width="720" height="480" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-02.webp" data-reveal><img src="img/gallery/forum-02-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 3 з 50" width="720" height="480" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-03.webp" data-reveal><img src="img/gallery/forum-03-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 4 з 50" width="720" height="480" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-04.webp" data-reveal><img src="img/gallery/forum-04-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 5 з 50" width="720" height="480" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-06.webp" data-reveal><img src="img/gallery/forum-06-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 6 з 50" width="720" height="480" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-11.webp" data-reveal><img src="img/gallery/forum-11-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 7 з 50" width="720" height="480" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-07.webp" data-reveal><img src="img/gallery/forum-07-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 8 з 50" width="720" height="480" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-09.webp" data-reveal><img src="img/gallery/forum-09-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 9 з 50" width="720" height="480" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-12.webp" data-reveal><img src="img/gallery/forum-12-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 10 з 50" width="720" height="480" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-05.webp" data-reveal><img src="img/gallery/forum-05-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 11 з 50" width="720" height="480" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-14.webp" data-reveal><img src="img/gallery/forum-14-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 12 з 50" width="640" height="360" loading="lazy"></button>
     </div>
+    <div class="gallery gallery--extra" data-gallery data-gallery-extra hidden>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-15.webp" data-reveal><img src="img/gallery/forum-15-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 13 з 50" width="640" height="360" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-16.webp" data-reveal><img src="img/gallery/forum-16-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 14 з 50" width="640" height="427" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-17.webp" data-reveal><img src="img/gallery/forum-17-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 15 з 50" width="640" height="360" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-18.webp" data-reveal><img src="img/gallery/forum-18-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 16 з 50" width="640" height="360" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-19.webp" data-reveal><img src="img/gallery/forum-19-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 17 з 50" width="640" height="360" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-20.webp" data-reveal><img src="img/gallery/forum-20-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 18 з 50" width="640" height="360" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-21.webp" data-reveal><img src="img/gallery/forum-21-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 19 з 50" width="640" height="853" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-22.webp" data-reveal><img src="img/gallery/forum-22-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 20 з 50" width="640" height="853" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-23.webp" data-reveal><img src="img/gallery/forum-23-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 21 з 50" width="640" height="480" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-24.webp" data-reveal><img src="img/gallery/forum-24-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 22 з 50" width="640" height="480" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-25.webp" data-reveal><img src="img/gallery/forum-25-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 23 з 50" width="640" height="1004" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-26.webp" data-reveal><img src="img/gallery/forum-26-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 24 з 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-27.webp" data-reveal><img src="img/gallery/forum-27-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 25 з 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-28.webp" data-reveal><img src="img/gallery/forum-28-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 26 з 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-29.webp" data-reveal><img src="img/gallery/forum-29-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 27 з 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-30.webp" data-reveal><img src="img/gallery/forum-30-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 28 з 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-31.webp" data-reveal><img src="img/gallery/forum-31-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 29 з 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-32.webp" data-reveal><img src="img/gallery/forum-32-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 30 з 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-33.webp" data-reveal><img src="img/gallery/forum-33-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 31 з 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-34.webp" data-reveal><img src="img/gallery/forum-34-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 32 з 50" width="640" height="958" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-35.webp" data-reveal><img src="img/gallery/forum-35-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 33 з 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-36.webp" data-reveal><img src="img/gallery/forum-36-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 34 з 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-37.webp" data-reveal><img src="img/gallery/forum-37-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 35 з 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-38.webp" data-reveal><img src="img/gallery/forum-38-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 36 з 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-39.webp" data-reveal><img src="img/gallery/forum-39-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 37 з 50" width="640" height="958" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-40.webp" data-reveal><img src="img/gallery/forum-40-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 38 з 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-41.webp" data-reveal><img src="img/gallery/forum-41-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 39 з 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-42.webp" data-reveal><img src="img/gallery/forum-42-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 40 з 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-43.webp" data-reveal><img src="img/gallery/forum-43-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 41 з 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-44.webp" data-reveal><img src="img/gallery/forum-44-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 42 з 50" width="640" height="958" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-45.webp" data-reveal><img src="img/gallery/forum-45-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 43 з 50" width="640" height="427" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-46.webp" data-reveal><img src="img/gallery/forum-46-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 44 з 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-47.webp" data-reveal><img src="img/gallery/forum-47-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 45 з 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-48.webp" data-reveal><img src="img/gallery/forum-48-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 46 з 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-49.webp" data-reveal><img src="img/gallery/forum-49-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 47 з 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-50.webp" data-reveal><img src="img/gallery/forum-50-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 48 з 50" width="640" height="958" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-51.webp" data-reveal><img src="img/gallery/forum-51-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 49 з 50" width="640" height="958" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-52.webp" data-reveal><img src="img/gallery/forum-52-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 50 з 50" width="640" height="958" loading="lazy"></button>
+    </div>
+    <div class="gallery__more"><button class="btn btn--outline btn--lg" type="button" data-gallery-more>Показати всі фото (50)</button></div>
 
     <div class="media-block" data-reveal>
       <h3>Згадки у ЗМІ</h3>
@@ -492,6 +532,6 @@
   <span class="lightbox__count"></span>
 </div>
 
-<script src="app.js?v=1"></script>
+<script src="app.js?v=3"></script>
 </body>
 </html>

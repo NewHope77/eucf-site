@@ -111,6 +111,8 @@
   }
 
   /* ---------- gallery lightbox ---------- */
+  var more = $('[data-gallery-more]');
+  if (more) more.addEventListener('click', function () { $('[data-gallery-extra]').hidden = false; more.parentNode.hidden = true; });
   var lb = $('#lightbox');
   var items = $$('[data-gallery] [data-full]');
   var idx = 0, lastFocus = null;
