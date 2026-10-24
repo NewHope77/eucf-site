@@ -8,6 +8,8 @@
     pfe: ''       // сайт фундації Pray for Europe
   };
 
+  var EN = document.documentElement.lang === 'en';
+
   function $(sel, ctx) { return (ctx || document).querySelector(sel); }
   function $$(sel, ctx) { return Array.prototype.slice.call((ctx || document).querySelectorAll(sel)); }
 
@@ -85,8 +87,11 @@
   var cd = $('[data-countdown]');
   if (cd) {
     var start = new Date(cd.getAttribute('data-countdown')).getTime();
-    var FORMS = { d: ['день', 'дні', 'днів'], h: ['година', 'години', 'годин'], m: ['хвилина', 'хвилини', 'хвилин'], s: ['секунда', 'секунди', 'секунд'] };
+    var FORMS = EN
+      ? { d: ['day', 'days'], h: ['hour', 'hours'], m: ['minute', 'minutes'], s: ['second', 'seconds'] }
+      : { d: ['день', 'дні', 'днів'], h: ['година', 'години', 'годин'], m: ['хвилина', 'хвилини', 'хвилин'], s: ['секунда', 'секунди', 'секунд'] };
     function plural(n, f) {
+      if (EN) return n === 1 ? f[0] : f[1];
       var a = n % 10, b = n % 100;
       if (a === 1 && b !== 11) return f[0];
       if (a >= 2 && a <= 4 && (b < 10 || b >= 20)) return f[1];
@@ -185,7 +190,8 @@
         .then(function (res) {
           if (!res.ok || String(res.j.success) === 'false') throw new Error(res.j.message || 'send failed');
           form.innerHTML = '<div class="sent"><div class="sent__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></div>' +
-            '<h3>Дякуємо!</h3><p>Повідомлення надіслано. Оргкомітет зв\'яжеться з Вами найближчим часом.</p></div>';
+            (EN ? '<h3>Thank you!</h3><p>Your message has been sent. The Organising Committee will get back to you shortly.</p></div>'
+                : '<h3>Дякуємо!</h3><p>Повідомлення надіслано. Оргкомітет зв\'яжеться з Вами найближчим часом.</p></div>');
         })
         .catch(function () { err.classList.add('show'); })
         .then(function () { btn.classList.remove('is-loading'); });

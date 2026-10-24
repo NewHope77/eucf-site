@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="uk">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +14,7 @@
   document.documentElement.classList.add('js');
   try { var t = localStorage.getItem('theme'); if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
 </script>
-<link rel="stylesheet" href="style.css?v=6">
+<link rel="stylesheet" href="style.css?v=7">
 </head>
 <body>
 
@@ -42,24 +42,28 @@
 
 <header class="header">
   <div class="container header__inner">
-    <a class="brand" href="#top" aria-label="EUCF 2026 — на початок">
-      <img src="img/logo-sm.png" alt="Логотип EUCF — прапори ЄС та України" width="512" height="304">
+    <a class="brand" href="#top" aria-label="EUCF 2026 — back to top">
+      <img src="img/logo-sm.png" alt="EUCF logo — flags of the EU and Ukraine" width="512" height="304">
       <span><b>EUCF</b><small>2026 · Brussels</small></span>
     </a>
-    <nav class="nav" aria-label="Головне меню">
-      <a href="#about">Про форум</a>
-      <a href="#program">Програма</a>
-      <a href="#speakers">Спікери</a>
-      <a href="#gallery">Галерея</a>
-      <a href="#partners">Партнери</a>
-      <a href="#contact">Контакти</a>
+    <nav class="nav" aria-label="Main menu">
+      <a href="#about">About</a>
+      <a href="#program">Programme</a>
+      <a href="#speakers">Speakers</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#partners">Partners</a>
+      <a href="#contact">Contact</a>
     </nav>
     <div class="header__actions">
-      <button class="icon-btn" type="button" data-theme-toggle aria-label="Перемкнути світлу / темну тему">
+      <div class="lang" role="group" aria-label="Language">
+        <a href="./" hreflang="en" lang="en" aria-current="true">EN</a>
+        <a href="ua/" hreflang="uk" lang="uk">UA</a>
+      </div>
+      <button class="icon-btn" type="button" data-theme-toggle aria-label="Toggle light / dark theme">
         <svg class="i-moon"><use href="#i-moon"/></svg><svg class="i-sun"><use href="#i-sun"/></svg>
       </button>
-      <a class="btn btn--accent" href="#contact" data-register target="_blank" rel="noopener">Зареєструватися</a>
-      <button class="icon-btn burger" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="drawer">
+      <a class="btn btn--accent" href="#contact" data-register target="_blank" rel="noopener">Register</a>
+      <button class="icon-btn burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
         <span class="lines"><span></span><span></span><span></span></span>
       </button>
     </div>
@@ -68,51 +72,50 @@
 
 <div class="drawer" id="drawer">
   <div class="drawer__bg" data-drawer-close></div>
-  <div class="drawer__panel" role="dialog" aria-label="Меню">
+  <div class="drawer__panel" role="dialog" aria-label="Menu">
     <div class="drawer__top">
       <span class="brand"><img src="img/logo-sm.png" alt="" width="512" height="304"><span><b>EUCF</b><small>2026 · Brussels</small></span></span>
-      <button class="icon-btn" type="button" data-drawer-close aria-label="Закрити меню"><svg><use href="#i-x"/></svg></button>
+      <button class="icon-btn" type="button" data-drawer-close aria-label="Close menu"><svg><use href="#i-x"/></svg></button>
     </div>
-    <nav aria-label="Мобільне меню">
-      <a href="#about" data-drawer-close>Про форум</a>
-      <a href="#program" data-drawer-close>Програма</a>
-      <a href="#speakers" data-drawer-close>Спікери</a>
-      <a href="#gallery" data-drawer-close>Галерея</a>
-      <a href="#partners" data-drawer-close>Партнери</a>
-      <a href="#contact" data-drawer-close>Контакти</a>
+    <nav aria-label="Mobile menu">
+      <a href="#about" data-drawer-close>About</a>
+      <a href="#program" data-drawer-close>Programme</a>
+      <a href="#speakers" data-drawer-close>Speakers</a>
+      <a href="#gallery" data-drawer-close>Gallery</a>
+      <a href="#partners" data-drawer-close>Partners</a>
+      <a href="#contact" data-drawer-close>Contact</a>
     </nav>
-    <a class="btn btn--accent btn--lg btn--block" href="#contact" data-register target="_blank" rel="noopener">Зареєструватися <svg class="arr"><use href="#i-arrow"/></svg></a>
+    <a class="btn btn--accent btn--lg btn--block" href="#contact" data-register target="_blank" rel="noopener">Register <svg class="arr"><use href="#i-arrow"/></svg></a>
   </div>
 </div>
 
 <main id="top">
 
-<!-- Блок 1: головний екран -->
 <section class="hero">
   <div class="hero__photo" aria-hidden="true"></div>
   <div class="container hero__inner">
     <div>
-      <span class="eyebrow" data-anim style="--d:.05s">3-й Європейсько-Український Християнський Форум · Брюссель</span>
+      <span class="eyebrow" data-anim style="--d:.05s">3rd European-Ukrainian Christian Forum · Brussels</span>
       <h1 data-anim style="--d:.15s">European-Ukrainian <span class="hl">Christian Forum</span><small>EUCF 2026</small></h1>
-      <p class="hero__sub" data-anim style="--d:.25s">Єднання задля відновлення Європи, захисту християнських цінностей та духовного відродження</p>
+      <p class="hero__sub" data-anim style="--d:.25s">Unity for the renewal of Europe, the defence of Christian values and spiritual revival</p>
       <div class="hero__meta" data-anim style="--d:.32s">
-        <span class="meta-pill"><svg><use href="#i-cal"/></svg>1–3 грудня 2026</span>
-        <span class="meta-pill"><svg><use href="#i-pin"/></svg>м. Брюссель</span>
+        <span class="meta-pill"><svg><use href="#i-cal"/></svg>1–3 December 2026</span>
+        <span class="meta-pill"><svg><use href="#i-pin"/></svg>Brussels</span>
       </div>
       <div class="countdown" data-countdown="2026-12-01T10:00:00+01:00" data-anim style="--d:.4s">
-        <p class="countdown__label">До початку події залишилося</p>
+        <p class="countdown__label">Time remaining until the event</p>
         <div class="countdown__grid" role="timer" aria-live="off">
-          <div class="countdown__cell"><b data-cd="d">00</b><span data-cd-l="d">днів</span></div>
-          <div class="countdown__cell"><b data-cd="h">00</b><span data-cd-l="h">годин</span></div>
-          <div class="countdown__cell"><b data-cd="m">00</b><span data-cd-l="m">хвилин</span></div>
-          <div class="countdown__cell"><b data-cd="s">00</b><span data-cd-l="s">секунд</span></div>
+          <div class="countdown__cell"><b data-cd="d">00</b><span data-cd-l="d">days</span></div>
+          <div class="countdown__cell"><b data-cd="h">00</b><span data-cd-l="h">hours</span></div>
+          <div class="countdown__cell"><b data-cd="m">00</b><span data-cd-l="m">minutes</span></div>
+          <div class="countdown__cell"><b data-cd="s">00</b><span data-cd-l="s">seconds</span></div>
         </div>
-        <p class="countdown__done">Форум розпочався</p>
+        <p class="countdown__done">The forum has begun</p>
       </div>
-      <p class="hero__lead" data-anim style="--d:.48s">Масштабна міжнародна платформа, що об'єднує духовних лідерів, європарламентарів, урядовців, науковців та молодь України і Європи задля формування нової суб'єктності євангельського руху та утвердження цінностей віри і свободи.</p>
+      <p class="hero__lead" data-anim style="--d:.48s">A large-scale international platform that brings together spiritual leaders, Members of the European Parliament, government officials, scholars and young people from Ukraine and Europe to shape a new agency for the evangelical movement and to affirm the values of faith and freedom.</p>
       <div class="hero__cta" data-anim style="--d:.56s">
-        <a class="btn btn--accent btn--lg" href="#contact" data-register target="_blank" rel="noopener">Зареєструватися <svg class="arr"><use href="#i-arrow"/></svg></a>
-        <a class="btn btn--ghost btn--lg" href="#program">Програма форуму</a>
+        <a class="btn btn--accent btn--lg" href="#contact" data-register target="_blank" rel="noopener">Register <svg class="arr"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn--ghost btn--lg" href="#program">Forum programme</a>
       </div>
     </div>
 
@@ -136,35 +139,34 @@
         </svg>
       </div>
       <div class="stage__logo"><img src="img/logo.webp" alt="" width="1200" height="712"></div>
-      <div class="chip chip--a"><span class="chip__ico"><svg><use href="#i-landmark"/></svg></span><span><b>Європарламент</b>Брюссель</span></div>
-      <div class="chip chip--b"><span class="chip__ico"><svg><use href="#i-star"/></svg></span><span><b>3-й форум</b>EUCF 2026</span></div>
+      <div class="chip chip--a"><span class="chip__ico"><svg><use href="#i-landmark"/></svg></span><span><b>European Parliament</b>Brussels</span></div>
+      <div class="chip chip--b"><span class="chip__ico"><svg><use href="#i-star"/></svg></span><span><b>3rd forum</b>EUCF 2026</span></div>
     </div>
   </div>
 </section>
 
 <div class="marquee" aria-hidden="true">
   <div class="marquee__track">
-    <span>Стратегічні робочі наради</span><span>Молодіжний Worship Night</span><span>Європейсько-Український Молитовний Сніданок</span><span>Освітньо-науковий форум</span><span>Віра та Свобода в Європі</span>
-    <span>Стратегічні робочі наради</span><span>Молодіжний Worship Night</span><span>Європейсько-Український Молитовний Сніданок</span><span>Освітньо-науковий форум</span><span>Віра та Свобода в Європі</span>
+    <span>Strategic Working Meetings</span><span>Youth Worship Night</span><span>European-Ukrainian Prayer Breakfast</span><span>Education and Science Forum</span><span>Faith and Freedom in Europe</span>
+    <span>Strategic Working Meetings</span><span>Youth Worship Night</span><span>European-Ukrainian Prayer Breakfast</span><span>Education and Science Forum</span><span>Faith and Freedom in Europe</span>
   </div>
 </div>
 
-<!-- Блок 2: про нас -->
 <section class="section" id="about">
   <div class="container">
     <div class="about">
       <div class="about__text" data-reveal>
-        <span class="eyebrow">Про нас</span>
-        <h2>Місія та мета EUCF</h2>
-        <p>Сучасна Європа перебуває на етапі глибоких світоглядних та геополітичних трансформацій. Через 35 років після розпаду СРСР перед суспільством постають нові виклики, які потребують міцного духовного й морального фундаменту.</p>
-        <p>Українська євангельська спільнота — як в Україні, так і серед багатомільйонної діаспори в країнах ЄС — має унікальний потенціал продемонструвати євангельський підхід для духовного відновлення, єднання та консолідації всієї Європи.</p>
+        <span class="eyebrow">About us</span>
+        <h2>EUCF mission and purpose</h2>
+        <p>Europe today is going through profound ideological and geopolitical transformations. Thirty-five years after the collapse of the USSR, society faces new challenges that require a strong spiritual and moral foundation.</p>
+        <p>The Ukrainian evangelical community — both in Ukraine and among the multi-million diaspora in EU countries — has a unique potential to demonstrate an evangelical approach to the spiritual renewal, unity and consolidation of all of Europe.</p>
         <div class="about__org">
-          <p>Захід проводиться під егідою <b>Фундації «Pray for Europe»</b> у партнерстві з Національним рухом молитовних сніданків, провідними євангельськими союзами України та європейськими християнськими альянсами.</p>
-          <a class="link-arrow" href="#" data-link="pfe" target="_blank" rel="noopener">Сайт організації-засновника Pray for Europe <svg><use href="#i-ext"/></svg></a>
+          <p>The event is held under the auspices of the <b>Pray for Europe Foundation</b> in partnership with the National Prayer Breakfast Movement, leading evangelical unions of Ukraine and European Christian alliances.</p>
+          <a class="link-arrow" href="#" data-link="pfe" target="_blank" rel="noopener">Website of the founding organisation, Pray for Europe <svg><use href="#i-ext"/></svg></a>
         </div>
       </div>
       <figure class="photo" data-reveal style="--d:.12s">
-        <img src="img/gallery/forum-05.webp" alt="Фотозвіт з минулорічних форумів у Брюсселі" width="1800" height="1200" loading="lazy">
+        <img src="img/gallery/forum-05.webp" alt="Photo report from previous forums in Brussels" width="1800" height="1200" loading="lazy">
       </figure>
     </div>
 
@@ -173,62 +175,61 @@
       <article class="goal" data-reveal>
         <span class="goal__no" aria-hidden="true">01</span>
         <div class="goal__ico"><svg><use href="#i-compass"/></svg></div>
-        <h3>Формування нової суб'єктності</h3>
-        <p>Мобілізація євангельської діаспори та побудова системного діалогу з європейськими інституціями.</p>
+        <h3>Building a new agency</h3>
+        <p>Mobilising the evangelical diaspora and building a systematic dialogue with European institutions.</p>
       </article>
       <article class="goal" data-reveal style="--d:.1s">
         <span class="goal__no" aria-hidden="true">02</span>
         <div class="goal__ico"><svg><use href="#i-shield"/></svg></div>
-        <h3>Захист фундаментальних цінностей</h3>
-        <p>Відновлення суспільного діалогу на основі християнської спадщини, міцного інституту сім'ї та справжніх прав людини.</p>
+        <h3>Defending fundamental values</h3>
+        <p>Restoring public dialogue on the basis of the Christian heritage, a strong institution of the family and genuine human rights.</p>
       </article>
       <article class="goal" data-reveal style="--d:.2s">
         <span class="goal__no" aria-hidden="true">03</span>
         <div class="goal__ico"><svg><use href="#i-spark"/></svg></div>
-        <h3>Розвиток молодіжного руху</h3>
-        <p>Залучення, навчання та розширення можливостей для нової генерації українських і європейських молодіжних лідерів.</p>
+        <h3>Developing the youth movement</h3>
+        <p>Engaging, training and expanding opportunities for a new generation of Ukrainian and European youth leaders.</p>
       </article>
     </div>
   </div>
 </section>
 
-<!-- Блок 3: розклад -->
 <section class="section section--dark" id="program">
   <div class="container">
     <div class="section__head" data-reveal>
       <div>
         <span class="eyebrow">Schedule</span>
-        <h2>Розклад заходу</h2>
-        <p>Хронологічна програма за днями</p>
+        <h2>Event schedule</h2>
+        <p>Day-by-day programme</p>
       </div>
     </div>
 
     <div class="days">
       <article class="day" data-reveal>
         <header class="day__head">
-          <div class="day__date"><b>1</b><small>груд.</small></div>
-          <div><small>День 1 · вівторок</small><h3>Церковна програма та Worship Night</h3></div>
+          <div class="day__date"><b>1</b><small>Dec</small></div>
+          <div><small>Day 1 · Tuesday</small><h3>Church Programme and Worship Night</h3></div>
         </header>
         <ol class="slots">
           <li class="slot">
             <span class="slot__time">10:00 – 17:00</span>
             <div>
-              <h4>Стратегічні робочі наради</h4>
+              <h4>Strategic Working Meetings</h4>
               <dl>
-                <div><dt><svg aria-label="Локація"><use href="#i-pin"/></svg></dt><dd>Церковна зала м. Брюссель</dd></div>
-                <div><dt><svg aria-label="Учасники"><use href="#i-users"/></svg></dt><dd>Єпископи, голови союзів, керівники місій з України та ЄС</dd></div>
-                <div><dt><svg aria-label="Формат"><use href="#i-format"/></svg></dt><dd>Робочі консультації та стратегічне планування</dd></div>
+                <div><dt><svg aria-label="Location"><use href="#i-pin"/></svg></dt><dd>Church hall, Brussels</dd></div>
+                <div><dt><svg aria-label="Participants"><use href="#i-users"/></svg></dt><dd>Bishops, heads of church unions and mission leaders from Ukraine and the EU</dd></div>
+                <div><dt><svg aria-label="Format"><use href="#i-format"/></svg></dt><dd>Working consultations and strategic planning</dd></div>
               </dl>
             </div>
           </li>
           <li class="slot">
             <span class="slot__time">18:00 – 21:00</span>
             <div>
-              <h4>Урочисте служіння та Молодіжний Worship Night</h4>
+              <h4>Celebration Service and Youth Worship Night</h4>
               <dl>
-                <div><dt><svg aria-label="Локація"><use href="#i-pin"/></svg></dt><dd>Партнерський церковний центр / Концертна зала</dd></div>
-                <div><dt><svg aria-label="Учасники"><use href="#i-users"/></svg></dt><dd>Широка євангельська громада діаспори, молодь</dd></div>
-                <div><dt><svg aria-label="Формат"><use href="#i-format"/></svg></dt><dd>Служіння подяки, спільна молитва, виступи музичних гуртів та молодіжних хедлайнерів</dd></div>
+                <div><dt><svg aria-label="Location"><use href="#i-pin"/></svg></dt><dd>Partner church centre / Concert hall</dd></div>
+                <div><dt><svg aria-label="Participants"><use href="#i-users"/></svg></dt><dd>The wider evangelical diaspora community, young people</dd></div>
+                <div><dt><svg aria-label="Format"><use href="#i-format"/></svg></dt><dd>Thanksgiving service, joint prayer, performances by music bands and youth headliners</dd></div>
               </dl>
             </div>
           </li>
@@ -237,37 +238,37 @@
 
       <article class="day" data-reveal style="--d:.12s">
         <header class="day__head">
-          <div class="day__date"><b>2</b><small>груд.</small></div>
-          <div><small>День 2 · середа</small><h3>Високий діалог у Європарламенті</h3></div>
+          <div class="day__date"><b>2</b><small>Dec</small></div>
+          <div><small>Day 2 · Wednesday</small><h3>High-Level Dialogue at the European Parliament</h3></div>
         </header>
         <ol class="slots">
           <li class="slot">
             <span class="slot__time">08:00 – 10:00</span>
             <div>
-              <h4>Європейсько-Український Молитовний Сніданок</h4>
+              <h4>European-Ukrainian Prayer Breakfast</h4>
               <dl>
-                <div><dt><svg aria-label="Локація"><use href="#i-pin"/></svg></dt><dd>Європарламент (зала на 200 осіб)</dd></div>
-                <div><dt><svg aria-label="Учасники"><use href="#i-users"/></svg></dt><dd>Європарламентарі, комісари Єврокомісії, українські можновладці, духовні лідери, посли</dd></div>
+                <div><dt><svg aria-label="Location"><use href="#i-pin"/></svg></dt><dd>European Parliament (hall for 200 people)</dd></div>
+                <div><dt><svg aria-label="Participants"><use href="#i-users"/></svg></dt><dd>Members of the European Parliament, European Commissioners, Ukrainian officials, spiritual leaders, ambassadors</dd></div>
               </dl>
             </div>
           </li>
           <li class="slot">
             <span class="slot__time">11:00 – 13:00</span>
             <div>
-              <h4>Освітньо-науковий форум / Робочі сесії</h4>
+              <h4>Education and Science Forum / Working Sessions</h4>
               <dl>
-                <div><dt><svg aria-label="Локація"><use href="#i-pin"/></svg></dt><dd>Європарламент (зала до 100 осіб)</dd></div>
-                <div><dt><svg aria-label="Учасники"><use href="#i-users"/></svg></dt><dd>Науковці, освітяни, асоціації українських вчених у Європі, аналітичні центри, семінарії</dd></div>
+                <div><dt><svg aria-label="Location"><use href="#i-pin"/></svg></dt><dd>European Parliament (hall for up to 100 people)</dd></div>
+                <div><dt><svg aria-label="Participants"><use href="#i-users"/></svg></dt><dd>Scholars, educators, associations of Ukrainian scientists in Europe, think tanks, seminaries</dd></div>
               </dl>
             </div>
           </li>
           <li class="slot">
             <span class="slot__time">14:00 – 17:00</span>
             <div>
-              <h4>Міжнародний форум «Віра та Свобода в Європі»</h4>
+              <h4>International Forum “Faith and Freedom in Europe”</h4>
               <dl>
-                <div><dt><svg aria-label="Локація"><use href="#i-pin"/></svg></dt><dd>Європарламент (конференц-зала)</dd></div>
-                <div><dt><svg aria-label="Учасники"><use href="#i-users"/></svg></dt><dd>Міжнародні аналітики (Ос Гіннес, Джефф Фонтейн), політики, духовні лідери</dd></div>
+                <div><dt><svg aria-label="Location"><use href="#i-pin"/></svg></dt><dd>European Parliament (conference hall)</dd></div>
+                <div><dt><svg aria-label="Participants"><use href="#i-users"/></svg></dt><dd>International analysts (Os Guinness, Jeff Fountain), politicians, spiritual leaders</dd></div>
               </dl>
             </div>
           </li>
@@ -276,184 +277,180 @@
     </div>
 
     <div class="schedule__cta" data-reveal>
-      <a class="btn btn--accent" href="#contact" data-register target="_blank" rel="noopener">Зареєструватися <svg class="arr"><use href="#i-arrow"/></svg></a>
+      <a class="btn btn--accent" href="#contact" data-register target="_blank" rel="noopener">Register <svg class="arr"><use href="#i-arrow"/></svg></a>
     </div>
   </div>
 </section>
 
-<!-- Блок 4: спікери -->
 <section class="section" id="speakers">
   <div class="container">
     <div class="section__head" data-reveal>
       <div>
-        <span class="eyebrow">Спікери</span>
-        <h2>Почесні гості та Спікери</h2>
-        <p>У форумі беруть участь провідні духовні лідери, міжнародні аналітики, європарламентарі та державні діячі.</p>
+        <span class="eyebrow">Speakers</span>
+        <h2>Honoured guests and speakers</h2>
+        <p>The forum brings together leading spiritual leaders, international analysts, Members of the European Parliament and statesmen.</p>
       </div>
     </div>
     <div class="speakers">
       <article class="speaker" data-reveal>
-        <div class="avatar"><span class="avatar__ring"></span><span class="avatar__in"><span class="avatar__face">ПУ</span></span></div>
-        <h3>Павло Унгурян</h3>
-        <p>Координатор Національного руху молитовних сніданків, засновник аналітичного центру «Віра і Свобода», народний депутат двох скликань.</p>
+        <div class="avatar"><span class="avatar__ring"></span><span class="avatar__in"><span class="avatar__face">PU</span></span></div>
+        <h3>Pavlo Unhurian</h3>
+        <p>Coordinator of the National Prayer Breakfast Movement, founder of the “Faith and Freedom” think tank, Member of the Ukrainian Parliament for two convocations.</p>
       </article>
       <article class="speaker" data-reveal style="--d:.08s">
-        <div class="avatar"><span class="avatar__ring"></span><span class="avatar__in"><span class="avatar__face">ОГ</span></span></div>
-        <h3>Ос Гіннес</h3>
-        <div class="speaker__en">Os Guinness · Великобританія / США</div>
-        <p>Всесвітньо відомий соціолог, мислитель, автор праць із питань свободи, віри та культури.</p>
+        <div class="avatar"><span class="avatar__ring"></span><span class="avatar__in"><span class="avatar__face">OG</span></span></div>
+        <h3>Os Guinness</h3>
+        <div class="speaker__en">United Kingdom / USA</div>
+        <p>World-renowned sociologist and thinker, author of works on freedom, faith and culture.</p>
       </article>
       <article class="speaker" data-reveal style="--d:.16s">
-        <div class="avatar"><span class="avatar__ring"></span><span class="avatar__in"><span class="avatar__face">ДФ</span></span></div>
-        <h3>Джефф Фонтейн</h3>
-        <div class="speaker__en">Jeff Fountain · Нідерланди</div>
-        <p>Керівник Центру європейських студій, дослідник християнської спадщини Європи.</p>
+        <div class="avatar"><span class="avatar__ring"></span><span class="avatar__in"><span class="avatar__face">JF</span></span></div>
+        <h3>Jeff Fountain</h3>
+        <div class="speaker__en">Netherlands</div>
+        <p>Head of the Centre for European Studies, researcher of Europe's Christian heritage.</p>
       </article>
       <article class="speaker" data-reveal>
-        <div class="avatar"><span class="avatar__ring"></span><span class="avatar__in"><span class="avatar__face">ІБ</span></span></div>
-        <h3>Ігор Бандура</h3>
-        <p>Заступник голови Всеукраїнського союзу церков ЄХБ, керівник напрямку міжнародних зв'язків.</p>
+        <div class="avatar"><span class="avatar__ring"></span><span class="avatar__in"><span class="avatar__face">IB</span></span></div>
+        <h3>Ihor Bandura</h3>
+        <p>Deputy Head of the All-Ukrainian Union of Churches of Evangelical Christians-Baptists, head of international relations.</p>
       </article>
       <article class="speaker" data-reveal style="--d:.08s">
-        <div class="avatar"><span class="avatar__ring"></span><span class="avatar__in"><span class="avatar__face">ВО</span></span></div>
-        <h3>Віталій Орлов</h3>
+        <div class="avatar"><span class="avatar__ring"></span><span class="avatar__in"><span class="avatar__face">VO</span></span></div>
+        <h3>Vitalii Orlov</h3>
         <p>Founder / CEO Intercessors for Ukraine, Coordinator of the Global Prayer for Ukraine Initiative</p>
       </article>
       <article class="speaker speaker--more" data-reveal style="--d:.16s">
-        <h3>Також серед підтверджених учасників</h3>
-        <p>Депутати Європейського парламенту, комісари Єврокомісії, українські можновладці, мери міст, представники Збройних Сил України, капелани та єпископи європейських церковних альянсів.</p>
+        <h3>Also among the confirmed participants</h3>
+        <p>Members of the European Parliament, European Commissioners, Ukrainian officials, city mayors, representatives of the Armed Forces of Ukraine, chaplains and bishops of European church alliances.</p>
       </article>
     </div>
   </div>
 </section>
 
-<!-- Блок 5: медіа та галерея -->
 <section class="section section--alt" id="gallery">
   <div class="container">
     <div class="section__head" data-reveal>
       <div>
-        <span class="eyebrow">Медіа та галерея</span>
-        <h2>Історія та атмосфера події</h2>
-        <p>Фотозвіт з минулорічних форумів та Європейсько-Українських молитовних сніданків у Брюсселі.</p>
+        <span class="eyebrow">Media and gallery</span>
+        <h2>History and atmosphere of the event</h2>
+        <p>Photo report from previous forums and European-Ukrainian Prayer Breakfasts in Brussels.</p>
       </div>
     </div>
     <figure class="video" data-reveal>
-      <video controls playsinline preload="metadata" poster="media/forum-video-poster.webp" width="848" height="480" aria-label="Відео з минулорічного форуму">
+      <video controls playsinline preload="metadata" poster="media/forum-video-poster.webp" width="848" height="480" aria-label="Video from a previous forum">
         <source src="media/forum-video.mp4" type="video/mp4">
       </video>
     </figure>
     <div class="gallery" data-gallery>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-13.webp" data-reveal><img src="img/gallery/forum-13-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 1 з 50" width="720" height="480" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-01.webp" data-reveal><img src="img/gallery/forum-01-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 2 з 50" width="720" height="480" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-06.webp" data-reveal><img src="img/gallery/forum-06-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 3 з 50" width="720" height="480" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-02.webp" data-reveal><img src="img/gallery/forum-02-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 4 з 50" width="720" height="480" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-03.webp" data-reveal><img src="img/gallery/forum-03-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 5 з 50" width="720" height="480" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-11.webp" data-reveal><img src="img/gallery/forum-11-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 6 з 50" width="720" height="480" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-07.webp" data-reveal><img src="img/gallery/forum-07-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 7 з 50" width="720" height="480" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-09.webp" data-reveal><img src="img/gallery/forum-09-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 8 з 50" width="720" height="480" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-05.webp" data-reveal><img src="img/gallery/forum-05-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 9 з 50" width="720" height="480" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-14.webp" data-reveal><img src="img/gallery/forum-14-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 10 з 50" width="640" height="360" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-15.webp" data-reveal><img src="img/gallery/forum-15-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 11 з 50" width="640" height="360" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-17.webp" data-reveal><img src="img/gallery/forum-17-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 12 з 50" width="640" height="360" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-13.webp" data-reveal><img src="img/gallery/forum-13-sm.webp" alt="Photo report from previous forums — photo 1 of 50" width="720" height="480" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-01.webp" data-reveal><img src="img/gallery/forum-01-sm.webp" alt="Photo report from previous forums — photo 2 of 50" width="720" height="480" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-06.webp" data-reveal><img src="img/gallery/forum-06-sm.webp" alt="Photo report from previous forums — photo 3 of 50" width="720" height="480" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-02.webp" data-reveal><img src="img/gallery/forum-02-sm.webp" alt="Photo report from previous forums — photo 4 of 50" width="720" height="480" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-03.webp" data-reveal><img src="img/gallery/forum-03-sm.webp" alt="Photo report from previous forums — photo 5 of 50" width="720" height="480" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-11.webp" data-reveal><img src="img/gallery/forum-11-sm.webp" alt="Photo report from previous forums — photo 6 of 50" width="720" height="480" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-07.webp" data-reveal><img src="img/gallery/forum-07-sm.webp" alt="Photo report from previous forums — photo 7 of 50" width="720" height="480" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-09.webp" data-reveal><img src="img/gallery/forum-09-sm.webp" alt="Photo report from previous forums — photo 8 of 50" width="720" height="480" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-05.webp" data-reveal><img src="img/gallery/forum-05-sm.webp" alt="Photo report from previous forums — photo 9 of 50" width="720" height="480" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-14.webp" data-reveal><img src="img/gallery/forum-14-sm.webp" alt="Photo report from previous forums — photo 10 of 50" width="640" height="360" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-15.webp" data-reveal><img src="img/gallery/forum-15-sm.webp" alt="Photo report from previous forums — photo 11 of 50" width="640" height="360" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-17.webp" data-reveal><img src="img/gallery/forum-17-sm.webp" alt="Photo report from previous forums — photo 12 of 50" width="640" height="360" loading="lazy"></button>
     </div>
     <div class="gallery gallery--extra" data-gallery data-gallery-extra hidden>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-18.webp" data-reveal><img src="img/gallery/forum-18-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 13 з 50" width="640" height="360" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-16.webp" data-reveal><img src="img/gallery/forum-16-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 14 з 50" width="640" height="427" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-20.webp" data-reveal><img src="img/gallery/forum-20-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 15 з 50" width="640" height="360" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-21.webp" data-reveal><img src="img/gallery/forum-21-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 16 з 50" width="640" height="853" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-23.webp" data-reveal><img src="img/gallery/forum-23-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 17 з 50" width="640" height="480" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-24.webp" data-reveal><img src="img/gallery/forum-24-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 18 з 50" width="640" height="480" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-25.webp" data-reveal><img src="img/gallery/forum-25-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 19 з 50" width="640" height="1004" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-45.webp" data-reveal><img src="img/gallery/forum-45-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 20 з 50" width="640" height="427" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-26.webp" data-reveal><img src="img/gallery/forum-26-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 21 з 50" width="640" height="428" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-27.webp" data-reveal><img src="img/gallery/forum-27-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 22 з 50" width="640" height="428" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-28.webp" data-reveal><img src="img/gallery/forum-28-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 23 з 50" width="640" height="428" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-29.webp" data-reveal><img src="img/gallery/forum-29-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 24 з 50" width="640" height="428" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-22.webp" data-reveal><img src="img/gallery/forum-22-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 25 з 50" width="640" height="853" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-30.webp" data-reveal><img src="img/gallery/forum-30-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 26 з 50" width="640" height="428" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-31.webp" data-reveal><img src="img/gallery/forum-31-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 27 з 50" width="640" height="428" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-32.webp" data-reveal><img src="img/gallery/forum-32-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 28 з 50" width="640" height="428" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-33.webp" data-reveal><img src="img/gallery/forum-33-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 29 з 50" width="640" height="428" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-34.webp" data-reveal><img src="img/gallery/forum-34-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 30 з 50" width="640" height="958" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-35.webp" data-reveal><img src="img/gallery/forum-35-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 31 з 50" width="640" height="428" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-19.webp" data-reveal><img src="img/gallery/forum-19-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 32 з 50" width="640" height="360" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-36.webp" data-reveal><img src="img/gallery/forum-36-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 33 з 50" width="640" height="428" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-37.webp" data-reveal><img src="img/gallery/forum-37-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 34 з 50" width="640" height="428" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-38.webp" data-reveal><img src="img/gallery/forum-38-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 35 з 50" width="640" height="428" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-39.webp" data-reveal><img src="img/gallery/forum-39-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 36 з 50" width="640" height="958" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-04.webp" data-reveal><img src="img/gallery/forum-04-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 37 з 50" width="720" height="480" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-40.webp" data-reveal><img src="img/gallery/forum-40-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 38 з 50" width="640" height="428" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-41.webp" data-reveal><img src="img/gallery/forum-41-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 39 з 50" width="640" height="428" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-42.webp" data-reveal><img src="img/gallery/forum-42-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 40 з 50" width="640" height="428" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-43.webp" data-reveal><img src="img/gallery/forum-43-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 41 з 50" width="640" height="428" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-44.webp" data-reveal><img src="img/gallery/forum-44-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 42 з 50" width="640" height="958" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-12.webp" data-reveal><img src="img/gallery/forum-12-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 43 з 50" width="720" height="480" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-46.webp" data-reveal><img src="img/gallery/forum-46-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 44 з 50" width="640" height="428" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-47.webp" data-reveal><img src="img/gallery/forum-47-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 45 з 50" width="640" height="428" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-48.webp" data-reveal><img src="img/gallery/forum-48-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 46 з 50" width="640" height="428" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-49.webp" data-reveal><img src="img/gallery/forum-49-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 47 з 50" width="640" height="428" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-50.webp" data-reveal><img src="img/gallery/forum-50-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 48 з 50" width="640" height="958" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-51.webp" data-reveal><img src="img/gallery/forum-51-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 49 з 50" width="640" height="958" loading="lazy"></button>
-      <button class="gallery__item" type="button" data-full="img/gallery/forum-52.webp" data-reveal><img src="img/gallery/forum-52-sm.webp" alt="Фотозвіт з минулорічних форумів — фото 50 з 50" width="640" height="958" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-18.webp" data-reveal><img src="img/gallery/forum-18-sm.webp" alt="Photo report from previous forums — photo 13 of 50" width="640" height="360" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-16.webp" data-reveal><img src="img/gallery/forum-16-sm.webp" alt="Photo report from previous forums — photo 14 of 50" width="640" height="427" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-20.webp" data-reveal><img src="img/gallery/forum-20-sm.webp" alt="Photo report from previous forums — photo 15 of 50" width="640" height="360" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-21.webp" data-reveal><img src="img/gallery/forum-21-sm.webp" alt="Photo report from previous forums — photo 16 of 50" width="640" height="853" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-23.webp" data-reveal><img src="img/gallery/forum-23-sm.webp" alt="Photo report from previous forums — photo 17 of 50" width="640" height="480" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-24.webp" data-reveal><img src="img/gallery/forum-24-sm.webp" alt="Photo report from previous forums — photo 18 of 50" width="640" height="480" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-25.webp" data-reveal><img src="img/gallery/forum-25-sm.webp" alt="Photo report from previous forums — photo 19 of 50" width="640" height="1004" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-45.webp" data-reveal><img src="img/gallery/forum-45-sm.webp" alt="Photo report from previous forums — photo 20 of 50" width="640" height="427" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-26.webp" data-reveal><img src="img/gallery/forum-26-sm.webp" alt="Photo report from previous forums — photo 21 of 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-27.webp" data-reveal><img src="img/gallery/forum-27-sm.webp" alt="Photo report from previous forums — photo 22 of 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-28.webp" data-reveal><img src="img/gallery/forum-28-sm.webp" alt="Photo report from previous forums — photo 23 of 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-29.webp" data-reveal><img src="img/gallery/forum-29-sm.webp" alt="Photo report from previous forums — photo 24 of 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-22.webp" data-reveal><img src="img/gallery/forum-22-sm.webp" alt="Photo report from previous forums — photo 25 of 50" width="640" height="853" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-30.webp" data-reveal><img src="img/gallery/forum-30-sm.webp" alt="Photo report from previous forums — photo 26 of 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-31.webp" data-reveal><img src="img/gallery/forum-31-sm.webp" alt="Photo report from previous forums — photo 27 of 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-32.webp" data-reveal><img src="img/gallery/forum-32-sm.webp" alt="Photo report from previous forums — photo 28 of 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-33.webp" data-reveal><img src="img/gallery/forum-33-sm.webp" alt="Photo report from previous forums — photo 29 of 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-34.webp" data-reveal><img src="img/gallery/forum-34-sm.webp" alt="Photo report from previous forums — photo 30 of 50" width="640" height="958" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-35.webp" data-reveal><img src="img/gallery/forum-35-sm.webp" alt="Photo report from previous forums — photo 31 of 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-19.webp" data-reveal><img src="img/gallery/forum-19-sm.webp" alt="Photo report from previous forums — photo 32 of 50" width="640" height="360" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-36.webp" data-reveal><img src="img/gallery/forum-36-sm.webp" alt="Photo report from previous forums — photo 33 of 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-37.webp" data-reveal><img src="img/gallery/forum-37-sm.webp" alt="Photo report from previous forums — photo 34 of 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-38.webp" data-reveal><img src="img/gallery/forum-38-sm.webp" alt="Photo report from previous forums — photo 35 of 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-39.webp" data-reveal><img src="img/gallery/forum-39-sm.webp" alt="Photo report from previous forums — photo 36 of 50" width="640" height="958" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-04.webp" data-reveal><img src="img/gallery/forum-04-sm.webp" alt="Photo report from previous forums — photo 37 of 50" width="720" height="480" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-40.webp" data-reveal><img src="img/gallery/forum-40-sm.webp" alt="Photo report from previous forums — photo 38 of 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-41.webp" data-reveal><img src="img/gallery/forum-41-sm.webp" alt="Photo report from previous forums — photo 39 of 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-42.webp" data-reveal><img src="img/gallery/forum-42-sm.webp" alt="Photo report from previous forums — photo 40 of 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-43.webp" data-reveal><img src="img/gallery/forum-43-sm.webp" alt="Photo report from previous forums — photo 41 of 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-44.webp" data-reveal><img src="img/gallery/forum-44-sm.webp" alt="Photo report from previous forums — photo 42 of 50" width="640" height="958" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-12.webp" data-reveal><img src="img/gallery/forum-12-sm.webp" alt="Photo report from previous forums — photo 43 of 50" width="720" height="480" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-46.webp" data-reveal><img src="img/gallery/forum-46-sm.webp" alt="Photo report from previous forums — photo 44 of 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-47.webp" data-reveal><img src="img/gallery/forum-47-sm.webp" alt="Photo report from previous forums — photo 45 of 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-48.webp" data-reveal><img src="img/gallery/forum-48-sm.webp" alt="Photo report from previous forums — photo 46 of 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-49.webp" data-reveal><img src="img/gallery/forum-49-sm.webp" alt="Photo report from previous forums — photo 47 of 50" width="640" height="428" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-50.webp" data-reveal><img src="img/gallery/forum-50-sm.webp" alt="Photo report from previous forums — photo 48 of 50" width="640" height="958" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-51.webp" data-reveal><img src="img/gallery/forum-51-sm.webp" alt="Photo report from previous forums — photo 49 of 50" width="640" height="958" loading="lazy"></button>
+      <button class="gallery__item" type="button" data-full="img/gallery/forum-52.webp" data-reveal><img src="img/gallery/forum-52-sm.webp" alt="Photo report from previous forums — photo 50 of 50" width="640" height="958" loading="lazy"></button>
     </div>
-    <div class="gallery__more"><button class="btn btn--outline btn--lg" type="button" data-gallery-more>Показати всі фото (50)</button></div>
+    <div class="gallery__more"><button class="btn btn--outline btn--lg" type="button" data-gallery-more>Show all photos (50)</button></div>
 
     <div class="media-block" data-reveal>
-      <h3>Згадки у ЗМІ</h3>
+      <h3>Media coverage</h3>
       <div class="media-list">
-        <div class="media-ph">Логотип медіа</div>
-        <div class="media-ph">Логотип медіа</div>
-        <div class="media-ph">Логотип медіа</div>
-        <div class="media-ph">Логотип медіа</div>
+        <div class="media-ph">Media logo</div>
+        <div class="media-ph">Media logo</div>
+        <div class="media-ph">Media logo</div>
+        <div class="media-ph">Media logo</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Блок 6: партнери -->
 <section class="section" id="partners">
   <div class="container">
     <div class="section__head" data-reveal>
       <div>
-        <span class="eyebrow">Партнери</span>
-        <h2>Організаційні та міжнародні партнери</h2>
-        <p>Захід підтримується мережею всесвітніх та європейських християнських альянсів і громадських інституцій.</p>
+        <span class="eyebrow">Partners</span>
+        <h2>Organisational and international partners</h2>
+        <p>The event is supported by a network of global and European Christian alliances and civic institutions.</p>
       </div>
     </div>
     <div class="partners">
-      <div class="partner" data-reveal><span class="partner__mark">CEC</span><div><b>Конференція Європейських Церков</b><br><small>CEC / КЕК</small></div></div>
-      <div class="partner" data-reveal style="--d:.06s"><span class="partner__mark">EAE</span><div><b>Європейський Євангельський Альянс</b><br><small>EAE</small></div></div>
-      <div class="partner" data-reveal style="--d:.12s"><span class="partner__mark">EBF</span><div><b>Європейська Баптистська Федерація</b><br><small>EBF</small></div></div>
-      <div class="partner" data-reveal style="--d:.18s"><span class="partner__mark">LM</span><div><b>Лозанський Рух</b><br><small>Lausanne Movement</small></div></div>
-      <div class="partner" data-reveal><span class="partner__mark">PEF</span><div><b>П'ятидесятницька Європейська Спільнота</b><br><small>PEF</small></div></div>
-      <div class="partner" data-reveal style="--d:.06s"><span class="partner__mark">WAG</span><div><b>Всесвітня Асамблея Божа</b><br><small>World Assemblies of God</small></div></div>
-      <div class="partner" data-reveal style="--d:.12s"><span class="partner__mark">ВіС</span><div><b>Аналітичний центр «Віра і Свобода»</b></div></div>
+      <div class="partner" data-reveal><span class="partner__mark">CEC</span><div><b>Conference of European Churches</b><br><small>CEC</small></div></div>
+      <div class="partner" data-reveal style="--d:.06s"><span class="partner__mark">EAE</span><div><b>European Evangelical Alliance</b><br><small>EAE</small></div></div>
+      <div class="partner" data-reveal style="--d:.12s"><span class="partner__mark">EBF</span><div><b>European Baptist Federation</b><br><small>EBF</small></div></div>
+      <div class="partner" data-reveal style="--d:.18s"><span class="partner__mark">LM</span><div><b>Lausanne Movement</b></div></div>
+      <div class="partner" data-reveal><span class="partner__mark">PEF</span><div><b>Pentecostal European Fellowship</b><br><small>PEF</small></div></div>
+      <div class="partner" data-reveal style="--d:.06s"><span class="partner__mark">WAG</span><div><b>World Assemblies of God</b></div></div>
+      <div class="partner" data-reveal style="--d:.12s"><span class="partner__mark">F&amp;F</span><div><b>“Faith and Freedom” Think Tank</b></div></div>
     </div>
   </div>
 </section>
 
-<!-- Блок 7: контакти -->
 <section class="section section--alt" id="contact">
   <div class="container">
     <div class="band" data-reveal>
       <div>
         <h2>European-Ukrainian Christian Forum (EUCF 2026)</h2>
-        <p>1–3 грудня 2026 року · м. Брюссель</p>
+        <p>1–3 December 2026 · Brussels</p>
       </div>
       <div class="band__side">
         <img src="img/logo-sm.png" alt="" width="512" height="304">
-        <a class="btn btn--accent btn--lg" href="#contact" data-register target="_blank" rel="noopener">Зареєструватися <svg class="arr"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn--accent btn--lg" href="#contact" data-register target="_blank" rel="noopener">Register <svg class="arr"><use href="#i-arrow"/></svg></a>
       </div>
     </div>
 
     <div class="contact" style="margin-top:72px">
       <div class="contact__info" data-reveal>
-        <span class="eyebrow">Контакти</span>
-        <h2>Зв'язатися з Оргкомітетом</h2>
-        <p>Маєте запитання щодо участі, партнерства чи висвітлення події у ЗМІ? Напишіть нам, і ми зв'яжемося з Вами найближчим часом!</p>
+        <span class="eyebrow">Contact</span>
+        <h2>Contact the Organising Committee</h2>
+        <p>Do you have questions about participation, partnership or media coverage of the event? Write to us and we will get back to you shortly!</p>
         <div class="contact-cards">
-          <a class="contact-card" href="mailto:info@eucf.info"><span class="contact-card__ico"><svg><use href="#i-mail"/></svg></span><span><small>Електронна пошта</small><b>info@eucf.info</b></span></a>
-          <a class="contact-card" href="https://eucf.info/"><span class="contact-card__ico"><svg><use href="#i-globe"/></svg></span><span><small>Офіційний домен</small><b>eucf.info</b></span></a>
+          <a class="contact-card" href="mailto:info@eucf.info"><span class="contact-card__ico"><svg><use href="#i-mail"/></svg></span><span><small>Email</small><b>info@eucf.info</b></span></a>
+          <a class="contact-card" href="https://eucf.info/"><span class="contact-card__ico"><svg><use href="#i-globe"/></svg></span><span><small>Official domain</small><b>eucf.info</b></span></a>
         </div>
       </div>
 
@@ -461,32 +458,32 @@
         <form id="contact-form" novalidate data-endpoint="https://formsubmit.co/ajax/info@eucf.info">
           <div class="form-grid">
             <div class="field">
-              <label for="f-name">Ваше ім'я <i>*</i></label>
+              <label for="f-name">Your name <i>*</i></label>
               <input id="f-name" name="name" type="text" autocomplete="name" required minlength="2">
-              <span class="err">Вкажіть ім'я</span>
+              <span class="err">Please enter your name</span>
             </div>
             <div class="field">
               <label for="f-email">Email <i>*</i></label>
               <input id="f-email" name="email" type="email" autocomplete="email" required>
-              <span class="err">Вкажіть коректний email</span>
+              <span class="err">Please enter a valid email</span>
             </div>
             <div class="field">
-              <label for="f-phone">Телефон / Telegram</label>
+              <label for="f-phone">Phone / Telegram</label>
               <input id="f-phone" name="phone" type="text" autocomplete="tel">
             </div>
             <div class="field">
-              <label for="f-org">Організація чи церква</label>
+              <label for="f-org">Organisation or church</label>
               <input id="f-org" name="organization" type="text" autocomplete="organization">
             </div>
             <div class="field full">
-              <label for="f-msg">Повідомлення <i>*</i></label>
+              <label for="f-msg">Message <i>*</i></label>
               <textarea id="f-msg" name="message" required minlength="5"></textarea>
-              <span class="err">Напишіть повідомлення</span>
+              <span class="err">Please write a message</span>
             </div>
           </div>
           <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
-          <button class="btn btn--blue btn--lg btn--block" type="submit">Надіслати <svg class="arr"><use href="#i-arrow"/></svg></button>
-          <p class="form-error" role="alert">Не вдалося надіслати повідомлення. Спробуйте ще раз або напишіть на <a href="mailto:info@eucf.info">info@eucf.info</a>.</p>
+          <button class="btn btn--blue btn--lg btn--block" type="submit">Send <svg class="arr"><use href="#i-arrow"/></svg></button>
+          <p class="form-error" role="alert">The message could not be sent. Please try again or write to <a href="mailto:info@eucf.info">info@eucf.info</a>.</p>
         </form>
       </div>
     </div>
@@ -500,43 +497,43 @@
     <div class="footer__grid">
       <div>
         <a class="brand" href="#top"><img src="img/logo-sm.png" alt="EUCF" width="512" height="304"><span><b>EUCF</b><small>2026 · Brussels</small></span></a>
-        <p class="footer__about">European-Ukrainian Christian Forum — 3-й Європейсько-Український Християнський Форум. 1–3 грудня 2026, Брюссель.</p>
+        <p class="footer__about">The 3rd European-Ukrainian Christian Forum. 1–3 December 2026, Brussels.</p>
       </div>
       <div>
-        <h4>Форум</h4>
+        <h4>Forum</h4>
         <ul>
-          <li><a href="#about">Про форум</a></li>
-          <li><a href="#program">Програма</a></li>
-          <li><a href="#speakers">Спікери</a></li>
-          <li><a href="#gallery">Галерея</a></li>
-          <li><a href="#partners">Партнери</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#program">Programme</a></li>
+          <li><a href="#speakers">Speakers</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#partners">Partners</a></li>
         </ul>
       </div>
       <div>
-        <h4>Контакти</h4>
+        <h4>Contact</h4>
         <ul>
           <li><a href="mailto:info@eucf.info">info@eucf.info</a></li>
           <li><a href="https://eucf.info/">eucf.info</a></li>
           <li><a href="#" data-link="pfe" target="_blank" rel="noopener">Pray for Europe Foundation</a></li>
-          <li><a href="#contact" data-register target="_blank" rel="noopener">Реєстрація на форум</a></li>
+          <li><a href="#contact" data-register target="_blank" rel="noopener">Forum registration</a></li>
         </ul>
       </div>
     </div>
     <div class="footer__bottom">
-      <span>© 2026 European-Ukrainian Christian Forum (EUCF). Всі права захищені.</span>
+      <span>© 2026 European-Ukrainian Christian Forum (EUCF). All rights reserved.</span>
       <span>Powered by Pray for Europe Foundation</span>
     </div>
   </div>
 </footer>
 
-<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Перегляд фото">
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
   <img alt="">
-  <button class="lightbox__btn lightbox__close" type="button" data-lb="close" aria-label="Закрити"><svg><use href="#i-x"/></svg></button>
-  <button class="lightbox__btn lightbox__prev" type="button" data-lb="prev" aria-label="Попереднє фото"><svg><use href="#i-left"/></svg></button>
-  <button class="lightbox__btn lightbox__next" type="button" data-lb="next" aria-label="Наступне фото"><svg><use href="#i-right"/></svg></button>
+  <button class="lightbox__btn lightbox__close" type="button" data-lb="close" aria-label="Close"><svg><use href="#i-x"/></svg></button>
+  <button class="lightbox__btn lightbox__prev" type="button" data-lb="prev" aria-label="Previous photo"><svg><use href="#i-left"/></svg></button>
+  <button class="lightbox__btn lightbox__next" type="button" data-lb="next" aria-label="Next photo"><svg><use href="#i-right"/></svg></button>
   <span class="lightbox__count"></span>
 </div>
 
-<script src="app.js?v=4"></script>
+<script src="app.js?v=5"></script>
 </body>
 </html>

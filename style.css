@@ -148,6 +148,10 @@ p { text-wrap: pretty; }
 .nav a:hover, .nav a.is-active { background: var(--bg-alt); color: var(--heading); }
 
 .header__actions { display: flex; align-items: center; gap: 8px; margin-left: auto; }
+.lang { display: flex; padding: 3px; border-radius: 13px; border: 1px solid var(--line); background: var(--surface); }
+.lang a { display: grid; place-items: center; min-width: 40px; height: 38px; padding: 0 8px; border-radius: 10px; font-weight: 800; font-size: 14px; letter-spacing: .04em; color: var(--muted); text-decoration: none; transition: background .2s, color .2s; }
+.lang a:hover { color: var(--heading); }
+.lang a[aria-current] { background: var(--heading); color: var(--bg); }
 .icon-btn {
   display: grid; place-items: center; width: 46px; height: 46px; border-radius: 14px;
   border: 1px solid var(--line); background: var(--surface); color: var(--heading); cursor: pointer;
@@ -448,6 +452,7 @@ a.contact-card:hover { border-color: var(--accent); transform: translateY(-3px);
   .brand small { display: none; }
   .header__actions .btn { display: none; }
   .icon-btn { width: 42px; height: 42px; }
+  .lang a { min-width: 34px; height: 34px; padding: 0 6px; font-size: 13px; }
   .hero { padding: 28px 0 64px; }
   .stage { max-width: 320px; }
   .chip { padding: 8px 11px; font-size: 12px; gap: 9px; }
