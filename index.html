@@ -14,7 +14,7 @@
   document.documentElement.classList.add('js');
   try { var t = localStorage.getItem('theme'); if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
 </script>
-<link rel="stylesheet" href="style.css?v=7">
+<link rel="stylesheet" href="style.css?v=9">
 </head>
 <body>
 
@@ -37,14 +37,14 @@
   <symbol id="i-x" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></symbol>
   <symbol id="i-left" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="m15 18-6-6 6-6"/></symbol>
   <symbol id="i-right" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="m9 18 6-6-6-6"/></symbol>
-  <symbol id="eu-star" viewBox="-3.3 -3.3 6.6 6.6"><path d="M0.00,-3.20 L0.72,-0.99 L3.04,-0.99 L1.16,0.38 L1.88,2.59 L0.00,1.22 L-1.88,2.59 L-1.16,0.38 L-3.04,-0.99 L-0.72,-0.99Z"/></symbol>
+  <symbol id="eu-star" viewBox="-3.3 -3.3 6.6 6.6" overflow="visible"><path d="M0.00,-3.20 L0.72,-0.99 L3.04,-0.99 L1.16,0.38 L1.88,2.59 L0.00,1.22 L-1.88,2.59 L-1.16,0.38 L-3.04,-0.99 L-0.72,-0.99Z"/></symbol>
 </svg>
 
 <header class="header">
   <div class="container header__inner">
     <a class="brand" href="#top" aria-label="EUCF 2026 — back to top">
       <img src="img/logo-sm.png" alt="EUCF logo — flags of the EU and Ukraine" width="512" height="304">
-      <span><b>EUCF</b><small>2026 · Brussels</small></span>
+      <span><b>EUCF</b></span>
     </a>
     <nav class="nav" aria-label="Main menu">
       <a href="#about">About</a>
@@ -74,7 +74,7 @@
   <div class="drawer__bg" data-drawer-close></div>
   <div class="drawer__panel" role="dialog" aria-label="Menu">
     <div class="drawer__top">
-      <span class="brand"><img src="img/logo-sm.png" alt="" width="512" height="304"><span><b>EUCF</b><small>2026 · Brussels</small></span></span>
+      <span class="brand"><img src="img/logo-sm.png" alt="" width="512" height="304"><span><b>EUCF</b></span></span>
       <button class="icon-btn" type="button" data-drawer-close aria-label="Close menu"><svg><use href="#i-x"/></svg></button>
     </div>
     <nav aria-label="Mobile menu">
@@ -95,13 +95,12 @@
   <div class="hero__photo" aria-hidden="true"></div>
   <div class="container hero__inner">
     <div>
-      <span class="eyebrow" data-anim style="--d:.05s">3rd European-Ukrainian Christian Forum · Brussels</span>
-      <h1 data-anim style="--d:.15s">European-Ukrainian <span class="hl">Christian Forum</span><small>EUCF 2026</small></h1>
-      <p class="hero__sub" data-anim style="--d:.25s">Unity for the renewal of Europe, the defence of Christian values and spiritual revival</p>
-      <div class="hero__meta" data-anim style="--d:.32s">
+      <div class="hero__meta" data-anim style="--d:.05s">
         <span class="meta-pill"><svg><use href="#i-cal"/></svg>1–3 December 2026</span>
         <span class="meta-pill"><svg><use href="#i-pin"/></svg>Brussels</span>
       </div>
+      <h1 data-anim style="--d:.15s">European-Ukrainian <span class="hl">Christian Forum 2026</span></h1>
+      <p class="hero__sub" data-anim style="--d:.25s">Unity for the renewal of Europe, the defence of Christian values and spiritual revival</p>
       <div class="countdown" data-countdown="2026-12-01T10:00:00+01:00" data-anim style="--d:.4s">
         <p class="countdown__label">Time remaining until the event</p>
         <div class="countdown__grid" role="timer" aria-live="off">
@@ -112,7 +111,7 @@
         </div>
         <p class="countdown__done">The forum has begun</p>
       </div>
-      <p class="hero__lead" data-anim style="--d:.48s">A large-scale international platform that brings together spiritual leaders, Members of the European Parliament, government officials, scholars and young people from Ukraine and Europe to shape a new agency for the evangelical movement and to affirm the values of faith and freedom.</p>
+      <p class="hero__lead" data-anim style="--d:.48s">A large-scale international platform that brings together spiritual leaders, Members of the European Parliament, government officials, scholars and young people from Ukraine and Europe to shape and affirm the values of faith and freedom in Europe.</p>
       <div class="hero__cta" data-anim style="--d:.56s">
         <a class="btn btn--accent btn--lg" href="#contact" data-register target="_blank" rel="noopener">Register <svg class="arr"><use href="#i-arrow"/></svg></a>
         <a class="btn btn--ghost btn--lg" href="#program">Forum programme</a>
@@ -121,26 +120,24 @@
 
     <div class="stage" data-anim style="--d:.2s" aria-hidden="true">
       <div class="stage__disc"></div>
-      <div class="stage__ring"></div>
       <div class="stage__stars">
-        <svg viewBox="0 0 100 100" fill="#f4d63c">
-          <g><use href="#eu-star" x="46.4" y="-1.6" width="7.2" height="7.2"/></g>
-          <g transform="rotate(30 50 50)"><use href="#eu-star" x="46.4" y="-1.6" width="7.2" height="7.2"/></g>
-          <g transform="rotate(60 50 50)"><use href="#eu-star" x="46.4" y="-1.6" width="7.2" height="7.2"/></g>
-          <g transform="rotate(90 50 50)"><use href="#eu-star" x="46.4" y="-1.6" width="7.2" height="7.2"/></g>
-          <g transform="rotate(120 50 50)"><use href="#eu-star" x="46.4" y="-1.6" width="7.2" height="7.2"/></g>
-          <g transform="rotate(150 50 50)"><use href="#eu-star" x="46.4" y="-1.6" width="7.2" height="7.2"/></g>
-          <g transform="rotate(180 50 50)"><use href="#eu-star" x="46.4" y="-1.6" width="7.2" height="7.2"/></g>
-          <g transform="rotate(210 50 50)"><use href="#eu-star" x="46.4" y="-1.6" width="7.2" height="7.2"/></g>
-          <g transform="rotate(240 50 50)"><use href="#eu-star" x="46.4" y="-1.6" width="7.2" height="7.2"/></g>
-          <g transform="rotate(270 50 50)"><use href="#eu-star" x="46.4" y="-1.6" width="7.2" height="7.2"/></g>
-          <g transform="rotate(300 50 50)"><use href="#eu-star" x="46.4" y="-1.6" width="7.2" height="7.2"/></g>
-          <g transform="rotate(330 50 50)"><use href="#eu-star" x="46.4" y="-1.6" width="7.2" height="7.2"/></g>
+        <svg viewBox="0 0 100 100" fill="#f4d63c" overflow="visible">
+          <g><use href="#eu-star" x="46.4" y="1.6" width="7.2" height="7.2"/></g>
+          <g transform="rotate(30 50 50)"><use href="#eu-star" x="46.4" y="1.6" width="7.2" height="7.2"/></g>
+          <g transform="rotate(60 50 50)"><use href="#eu-star" x="46.4" y="1.6" width="7.2" height="7.2"/></g>
+          <g transform="rotate(90 50 50)"><use href="#eu-star" x="46.4" y="1.6" width="7.2" height="7.2"/></g>
+          <g transform="rotate(120 50 50)"><use href="#eu-star" x="46.4" y="1.6" width="7.2" height="7.2"/></g>
+          <g transform="rotate(150 50 50)"><use href="#eu-star" x="46.4" y="1.6" width="7.2" height="7.2"/></g>
+          <g transform="rotate(180 50 50)"><use href="#eu-star" x="46.4" y="1.6" width="7.2" height="7.2"/></g>
+          <g transform="rotate(210 50 50)"><use href="#eu-star" x="46.4" y="1.6" width="7.2" height="7.2"/></g>
+          <g transform="rotate(240 50 50)"><use href="#eu-star" x="46.4" y="1.6" width="7.2" height="7.2"/></g>
+          <g transform="rotate(270 50 50)"><use href="#eu-star" x="46.4" y="1.6" width="7.2" height="7.2"/></g>
+          <g transform="rotate(300 50 50)"><use href="#eu-star" x="46.4" y="1.6" width="7.2" height="7.2"/></g>
+          <g transform="rotate(330 50 50)"><use href="#eu-star" x="46.4" y="1.6" width="7.2" height="7.2"/></g>
         </svg>
       </div>
       <div class="stage__logo"><img src="img/logo.webp" alt="" width="1200" height="712"></div>
       <div class="chip chip--a"><span class="chip__ico"><svg><use href="#i-landmark"/></svg></span><span><b>European Parliament</b>Brussels</span></div>
-      <div class="chip chip--b"><span class="chip__ico"><svg><use href="#i-star"/></svg></span><span><b>3rd forum</b>EUCF 2026</span></div>
     </div>
   </div>
 </section>
@@ -158,10 +155,10 @@
       <div class="about__text" data-reveal>
         <span class="eyebrow">About us</span>
         <h2>EUCF mission and purpose</h2>
-        <p>Europe today is going through profound ideological and geopolitical transformations. Thirty-five years after the collapse of the USSR, society faces new challenges that require a strong spiritual and moral foundation.</p>
-        <p>The Ukrainian evangelical community — both in Ukraine and among the multi-million diaspora in EU countries — has a unique potential to demonstrate an evangelical approach to the spiritual renewal, unity and consolidation of all of Europe.</p>
+        <p>Europe today is going through profound ideological and geopolitical transformations. New challenges are emerging that prompt us to seek a strong spiritual and moral foundation for stability and peace.</p>
+        <p>Our goal is to create an open space for dialogue between the Ukrainian and European Christian communities. By uniting our experience, values and efforts, we seek to build partnerships together for spiritual renewal, mutual support and the consolidation of Europe.</p>
         <div class="about__org">
-          <p>The event is held under the auspices of the <b>Pray for Europe Foundation</b> in partnership with the National Prayer Breakfast Movement, leading evangelical unions of Ukraine and European Christian alliances.</p>
+          <p>The event is organised by the <b>Pray for Europe Foundation</b> in close cooperation with the National Prayer Breakfast Movement, leading evangelical unions of Ukraine and European Christian alliances.</p>
           <a class="link-arrow" href="#" data-link="pfe" target="_blank" rel="noopener">Website of the founding organisation, Pray for Europe <svg><use href="#i-ext"/></svg></a>
         </div>
       </div>
@@ -496,7 +493,7 @@
   <div class="container">
     <div class="footer__grid">
       <div>
-        <a class="brand" href="#top"><img src="img/logo-sm.png" alt="EUCF" width="512" height="304"><span><b>EUCF</b><small>2026 · Brussels</small></span></a>
+        <a class="brand" href="#top"><img src="img/logo-sm.png" alt="EUCF" width="512" height="304"><span><b>EUCF</b></span></a>
         <p class="footer__about">The 3rd European-Ukrainian Christian Forum. 1–3 December 2026, Brussels.</p>
       </div>
       <div>
