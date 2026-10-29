@@ -14,7 +14,7 @@
   document.documentElement.classList.add('js');
   try { var t = localStorage.getItem('theme'); if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
 </script>
-<link rel="stylesheet" href="../style.css?v=11">
+<link rel="stylesheet" href="../style.css?v=14">
 </head>
 <body>
 
@@ -159,10 +159,6 @@
         <h2>Місія та мета EUCF</h2>
         <p>Сучасна Європа проходить етап глибоких світоглядних та геополітичних трансформацій. Постають нові виклики, які спонукають нас шукати міцний духовний і моральний фундамент задля стабільності та миру.</p>
         <p>Наша мета — створити відкритий простір для діалогу між українською та європейською християнськими спільнотами. Єднаючи досвід, цінності та зусилля, ми прагнемо разом розбудовувати партнерські зв'язки для духовного відновлення, взаємної підтримки та консолідації Європи.</p>
-        <div class="about__org">
-          <p>Захід організовано <b>Фундацією «Pray for Europe»</b> у тісній співпраці з Національним рухом молитовних сніданків, провідними євангельськими союзами.</p>
-          <a class="link-arrow" href="#" data-link="pfe" target="_blank" rel="noopener">Сайт організації-засновника Pray for Europe <svg><use href="#i-ext"/></svg></a>
-        </div>
       </div>
       <figure class="photo" data-reveal style="--d:.12s">
         <img src="../img/gallery/forum-05.webp" alt="Фотозвіт з минулорічних форумів у Брюсселі" width="1800" height="1200" loading="lazy">
@@ -422,6 +418,7 @@
       </div>
     </div>
     <div class="partners">
+      <a class="partner" href="https://nationaldayofprayer.eu/" data-link="pfe" target="_blank" rel="noopener" data-reveal><span class="partner__mark">PfE</span><div><b>Фундація «Pray for Europe»</b><br><small class="partner__url">nationaldayofprayer.eu <svg><use href="#i-ext"/></svg></small></div></a>
       <div class="partner" data-reveal><span class="partner__mark">CEC</span><div><b>Конференція Європейських Церков</b><br><small>CEC / КЕК</small></div></div>
       <div class="partner" data-reveal style="--d:.06s"><span class="partner__mark">EAE</span><div><b>Європейський Євангельський Альянс</b><br><small>EAE</small></div></div>
       <div class="partner" data-reveal style="--d:.12s"><span class="partner__mark">EBF</span><div><b>Європейська Баптистська Федерація</b><br><small>EBF</small></div></div>
@@ -538,6 +535,6 @@
   <span class="lightbox__count"></span>
 </div>
 
-<script src="../app.js?v=6"></script>
+<script src="../app.js?v=7"></script>
 </body>
 </html>

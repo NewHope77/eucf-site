@@ -5,7 +5,7 @@
   /* Посилання, які надає оргкомітет. Порожнє значення = кнопка веде до блоку контактів. */
   var LINKS = {
     register: 'https://forms.gle/Vs5mRtGasJQqnzBX8', // Google Форма реєстрації
-    pfe: ''       // сайт фундації Pray for Europe
+    pfe: 'https://nationaldayofprayer.eu/' // сайт фундації Pray for Europe
   };
 
   var EN = document.documentElement.lang === 'en';

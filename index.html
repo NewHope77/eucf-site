@@ -14,7 +14,7 @@
   document.documentElement.classList.add('js');
   try { var t = localStorage.getItem('theme'); if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
 </script>
-<link rel="stylesheet" href="style.css?v=11">
+<link rel="stylesheet" href="style.css?v=14">
 </head>
 <body>
 
@@ -157,10 +157,6 @@
         <h2>EUCF mission and purpose</h2>
         <p>Europe today is going through profound ideological and geopolitical transformations. New challenges are emerging that prompt us to seek a strong spiritual and moral foundation for stability and peace.</p>
         <p>Our goal is to create an open space for dialogue between the Ukrainian and European Christian communities. By uniting our experience, values and efforts, we seek to build partnerships together for spiritual renewal, mutual support and the consolidation of Europe.</p>
-        <div class="about__org">
-          <p>The event is organised by the <b>Pray for Europe Foundation</b> in close cooperation with the National Prayer Breakfast Movement and leading evangelical unions.</p>
-          <a class="link-arrow" href="#" data-link="pfe" target="_blank" rel="noopener">Website of the founding organisation, Pray for Europe <svg><use href="#i-ext"/></svg></a>
-        </div>
       </div>
       <figure class="photo" data-reveal style="--d:.12s">
         <img src="img/gallery/forum-05.webp" alt="Photo report from previous forums in Brussels" width="1800" height="1200" loading="lazy">
@@ -416,6 +412,7 @@
       </div>
     </div>
     <div class="partners">
+      <a class="partner" href="https://nationaldayofprayer.eu/" data-link="pfe" target="_blank" rel="noopener" data-reveal><span class="partner__mark">PfE</span><div><b>Pray for Europe Foundation</b><br><small class="partner__url">nationaldayofprayer.eu <svg><use href="#i-ext"/></svg></small></div></a>
       <div class="partner" data-reveal><span class="partner__mark">CEC</span><div><b>Conference of European Churches</b><br><small>CEC</small></div></div>
       <div class="partner" data-reveal style="--d:.06s"><span class="partner__mark">EAE</span><div><b>European Evangelical Alliance</b><br><small>EAE</small></div></div>
       <div class="partner" data-reveal style="--d:.12s"><span class="partner__mark">EBF</span><div><b>European Baptist Federation</b><br><small>EBF</small></div></div>
@@ -531,6 +528,6 @@
   <span class="lightbox__count"></span>
 </div>
 
-<script src="app.js?v=6"></script>
+<script src="app.js?v=7"></script>
 </body>
 </html>
