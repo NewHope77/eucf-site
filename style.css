@@ -64,6 +64,7 @@ body {
   font-size: 17px; line-height: 1.6; color: var(--text); background: var(--bg);
   overflow-x: hidden; -webkit-font-smoothing: antialiased;
   animation: page-in .5s var(--ease) both;
+  padding-top: 81px; /* full header height + border */
 }
 @keyframes page-in { from { opacity: 0; } }
 img, svg { max-width: 100%; display: block; }
@@ -125,9 +126,10 @@ p { text-wrap: pretty; }
 .link-arrow svg { width: 18px; height: 18px; transition: transform .25s var(--ease); }
 .link-arrow:hover svg { transform: translate(3px, -3px); }
 
-/* Header */
+/* Header — fixed, so its shrink on scroll never moves the page under it
+   (a sticky header changing height made the scroll position jump back and forth) */
 .header {
-  position: sticky; top: 0; z-index: 60; background: var(--header-bg);
+  position: fixed; top: 0; left: 0; right: 0; z-index: 60; background: var(--header-bg);
   backdrop-filter: blur(18px) saturate(170%); -webkit-backdrop-filter: blur(18px) saturate(170%);
   border-bottom: 1px solid var(--line); transition: box-shadow .3s;
 }
@@ -445,6 +447,7 @@ a.contact-card:hover { border-color: var(--accent); transform: translateY(-3px);
   .footer__grid { grid-template-columns: 1fr; gap: 32px; }
 }
 @media (max-width: 640px) {
+  body { padding-top: 69px; }
   .header__inner { height: 68px; gap: 10px; }
   .header.is-scrolled .header__inner { height: 60px; }
   .brand img { height: 36px; }

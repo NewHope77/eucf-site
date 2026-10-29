@@ -37,8 +37,12 @@
   var header = $('.header');
   var navLinks = $$('.nav a');
   var sections = navLinks.map(function (a) { return $(a.getAttribute('href')); }).filter(Boolean);
+  var scrolled = false;
   function onScroll() {
-    if (header) header.classList.toggle('is-scrolled', window.scrollY > 10);
+    // two thresholds so the state can't flip back and forth on one pixel
+    if (!scrolled && window.scrollY > 40) scrolled = true;
+    else if (scrolled && window.scrollY < 8) scrolled = false;
+    if (header) header.classList.toggle('is-scrolled', scrolled);
     var y = window.scrollY + 140, cur = null;
     sections.forEach(function (s) { if (s.offsetTop <= y) cur = s.id; });
     navLinks.forEach(function (a) { a.classList.toggle('is-active', a.getAttribute('href') === '#' + cur); });
