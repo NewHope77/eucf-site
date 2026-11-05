@@ -14,7 +14,7 @@
   document.documentElement.classList.add('js');
   try { var t = localStorage.getItem('theme'); if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
 </script>
-<link rel="stylesheet" href="../style.css?v=14">
+<link rel="stylesheet" href="../style.css?v=15">
 </head>
 <body>
 
@@ -49,9 +49,7 @@
     <nav class="nav" aria-label="Головне меню">
       <a href="#about">Про форум</a>
       <a href="#program">Програма</a>
-      <a href="#speakers">Спікери</a>
       <a href="#gallery">Галерея</a>
-      <a href="#partners">Партнери</a>
       <a href="#contact">Контакти</a>
     </nav>
     <div class="header__actions">
@@ -80,9 +78,7 @@
     <nav aria-label="Мобільне меню">
       <a href="#about" data-drawer-close>Про форум</a>
       <a href="#program" data-drawer-close>Програма</a>
-      <a href="#speakers" data-drawer-close>Спікери</a>
       <a href="#gallery" data-drawer-close>Галерея</a>
-      <a href="#partners" data-drawer-close>Партнери</a>
       <a href="#contact" data-drawer-close>Контакти</a>
     </nav>
     <a class="btn btn--accent btn--lg btn--block" href="#contact" data-register target="_blank" rel="noopener">Зареєструватися <svg class="arr"><use href="#i-arrow"/></svg></a>
@@ -102,7 +98,7 @@
       </div>
       <h1 data-anim style="--d:.15s">European-Ukrainian <span class="hl">Christian Forum 2026</span></h1>
       <p class="hero__sub" data-anim style="--d:.25s">Єднання задля відновлення Європи, захисту християнських цінностей та духовного відродження</p>
-      <div class="countdown" data-countdown="2026-12-01T10:00:00+01:00" data-anim style="--d:.4s">
+      <div class="countdown" data-countdown="2026-12-01T15:00:00+01:00" data-anim style="--d:.4s">
         <p class="countdown__label">До початку події залишилося</p>
         <div class="countdown__grid" role="timer" aria-live="off">
           <div class="countdown__cell"><b data-cd="d">00</b><span data-cd-l="d">днів</span></div>
@@ -145,8 +141,8 @@
 
 <div class="marquee" aria-hidden="true">
   <div class="marquee__track">
-    <span>Стратегічні робочі наради</span><span>Молодіжний Worship Night</span><span>Європейсько-Український Молитовний Сніданок</span><span>Освітньо-науковий форум</span><span>Віра та Свобода в Європі</span>
-    <span>Стратегічні робочі наради</span><span>Молодіжний Worship Night</span><span>Європейсько-Український Молитовний Сніданок</span><span>Освітньо-науковий форум</span><span>Віра та Свобода в Європі</span>
+    <span>Стратегічні робочі наради</span><span>Молодіжний Worship Night</span><span>III Європейсько-Український Молитовний Сніданок</span><span>Європейський форум з питань науки та освіти</span><span>Віра та Свобода в Європі</span>
+    <span>Стратегічні робочі наради</span><span>Молодіжний Worship Night</span><span>III Європейсько-Український Молитовний Сніданок</span><span>Європейський форум з питань науки та освіти</span><span>Віра та Свобода в Європі</span>
   </div>
 </div>
 
@@ -208,7 +204,7 @@
         </header>
         <ol class="slots">
           <li class="slot">
-            <span class="slot__time">10:00 – 17:00</span>
+            <span class="slot__time">15:00 – 17:00</span>
             <div>
               <h4>Стратегічні робочі наради</h4>
               <dl>
@@ -241,7 +237,7 @@
           <li class="slot">
             <span class="slot__time">08:00 – 10:00</span>
             <div>
-              <h4>Європейсько-Український Молитовний Сніданок</h4>
+              <h4>III Європейсько-Український Молитовний Сніданок</h4>
               <dl>
                 <div><dt><svg aria-label="Локація"><use href="#i-pin"/></svg></dt><dd>Європарламент (зала на 200 осіб)</dd></div>
                 <div><dt><svg aria-label="Учасники"><use href="#i-users"/></svg></dt><dd>Європарламентарі, комісари Єврокомісії, українські можновладці, духовні лідери, посли</dd></div>
@@ -251,7 +247,7 @@
           <li class="slot">
             <span class="slot__time">11:00 – 13:00</span>
             <div>
-              <h4>Освітньо-науковий форум / Робочі сесії</h4>
+              <h4>Європейський форум з питань науки та освіти</h4>
               <dl>
                 <div><dt><svg aria-label="Локація"><use href="#i-pin"/></svg></dt><dd>Європарламент (зала до 100 осіб)</dd></div>
                 <div><dt><svg aria-label="Учасники"><use href="#i-users"/></svg></dt><dd>Науковці, освітяни, асоціації українських вчених у Європі, аналітичні центри, семінарії</dd></div>
@@ -274,52 +270,6 @@
 
     <div class="schedule__cta" data-reveal>
       <a class="btn btn--accent" href="#contact" data-register target="_blank" rel="noopener">Зареєструватися <svg class="arr"><use href="#i-arrow"/></svg></a>
-    </div>
-  </div>
-</section>
-
-<!-- Блок 4: спікери -->
-<section class="section" id="speakers">
-  <div class="container">
-    <div class="section__head" data-reveal>
-      <div>
-        <span class="eyebrow">Спікери</span>
-        <h2>Почесні гості та Спікери</h2>
-        <p>У форумі беруть участь провідні духовні лідери, міжнародні аналітики, європарламентарі та державні діячі.</p>
-      </div>
-    </div>
-    <div class="speakers">
-      <article class="speaker" data-reveal>
-        <div class="avatar"><span class="avatar__ring"></span><span class="avatar__in"><span class="avatar__face">ПУ</span></span></div>
-        <h3>Павло Унгурян</h3>
-        <p>Координатор Національного руху молитовних сніданків, засновник аналітичного центру «Віра і Свобода», народний депутат двох скликань.</p>
-      </article>
-      <article class="speaker" data-reveal style="--d:.08s">
-        <div class="avatar"><span class="avatar__ring"></span><span class="avatar__in"><span class="avatar__face">ОГ</span></span></div>
-        <h3>Ос Гіннес</h3>
-        <div class="speaker__en">Os Guinness · Великобританія / США</div>
-        <p>Всесвітньо відомий соціолог, мислитель, автор праць із питань свободи, віри та культури.</p>
-      </article>
-      <article class="speaker" data-reveal style="--d:.16s">
-        <div class="avatar"><span class="avatar__ring"></span><span class="avatar__in"><span class="avatar__face">ДФ</span></span></div>
-        <h3>Джефф Фонтейн</h3>
-        <div class="speaker__en">Jeff Fountain · Нідерланди</div>
-        <p>Керівник Центру європейських студій, дослідник християнської спадщини Європи.</p>
-      </article>
-      <article class="speaker" data-reveal>
-        <div class="avatar"><span class="avatar__ring"></span><span class="avatar__in"><span class="avatar__face">ІБ</span></span></div>
-        <h3>Ігор Бандура</h3>
-        <p>Заступник голови Всеукраїнського союзу церков ЄХБ, керівник напрямку міжнародних зв'язків.</p>
-      </article>
-      <article class="speaker" data-reveal style="--d:.08s">
-        <div class="avatar"><span class="avatar__ring"></span><span class="avatar__in"><span class="avatar__face">ВО</span></span></div>
-        <h3>Віталій Орлов</h3>
-        <p>Founder / CEO Intercessors for Ukraine, Coordinator of the Global Prayer for Ukraine Initiative</p>
-      </article>
-      <article class="speaker speaker--more" data-reveal style="--d:.16s">
-        <h3>Також серед підтверджених учасників</h3>
-        <p>Депутати Європейського парламенту, комісари Єврокомісії, українські можновладці, мери міст, представники Збройних Сил України, капелани та єпископи європейських церковних альянсів.</p>
-      </article>
     </div>
   </div>
 </section>
@@ -407,29 +357,6 @@
   </div>
 </section>
 
-<!-- Блок 6: партнери -->
-<section class="section" id="partners">
-  <div class="container">
-    <div class="section__head" data-reveal>
-      <div>
-        <span class="eyebrow">Партнери</span>
-        <h2>Організаційні та міжнародні партнери</h2>
-        <p>Захід підтримується мережею всесвітніх та європейських християнських альянсів і громадських інституцій.</p>
-      </div>
-    </div>
-    <div class="partners">
-      <a class="partner" href="https://nationaldayofprayer.eu/" data-link="pfe" target="_blank" rel="noopener" data-reveal><span class="partner__mark">PfE</span><div><b>Фундація «Pray for Europe»</b><br><small class="partner__url">nationaldayofprayer.eu <svg><use href="#i-ext"/></svg></small></div></a>
-      <div class="partner" data-reveal><span class="partner__mark">CEC</span><div><b>Конференція Європейських Церков</b><br><small>CEC / КЕК</small></div></div>
-      <div class="partner" data-reveal style="--d:.06s"><span class="partner__mark">EAE</span><div><b>Європейський Євангельський Альянс</b><br><small>EAE</small></div></div>
-      <div class="partner" data-reveal style="--d:.12s"><span class="partner__mark">EBF</span><div><b>Європейська Баптистська Федерація</b><br><small>EBF</small></div></div>
-      <div class="partner" data-reveal style="--d:.18s"><span class="partner__mark">LM</span><div><b>Лозанський Рух</b><br><small>Lausanne Movement</small></div></div>
-      <div class="partner" data-reveal><span class="partner__mark">PEF</span><div><b>П'ятидесятницька Європейська Спільнота</b><br><small>PEF</small></div></div>
-      <div class="partner" data-reveal style="--d:.06s"><span class="partner__mark">WAG</span><div><b>Всесвітня Асамблея Божа</b><br><small>World Assemblies of God</small></div></div>
-      <div class="partner" data-reveal style="--d:.12s"><span class="partner__mark">ВіС</span><div><b>Аналітичний центр «Віра і Свобода»</b></div></div>
-    </div>
-  </div>
-</section>
-
 <!-- Блок 7: контакти -->
 <section class="section section--alt" id="contact">
   <div class="container">
@@ -505,9 +432,7 @@
         <ul>
           <li><a href="#about">Про форум</a></li>
           <li><a href="#program">Програма</a></li>
-          <li><a href="#speakers">Спікери</a></li>
           <li><a href="#gallery">Галерея</a></li>
-          <li><a href="#partners">Партнери</a></li>
         </ul>
       </div>
       <div>
@@ -515,7 +440,7 @@
         <ul>
           <li><a href="mailto:info@eucf.info">info@eucf.info</a></li>
           <li><a href="https://eucf.info/">eucf.info</a></li>
-          <li><a href="#" data-link="pfe" target="_blank" rel="noopener">Pray for Europe Foundation</a></li>
+          <li><a href="https://nationaldayofprayer.eu/" data-link="pfe" target="_blank" rel="noopener">Pray for Europe Foundation</a></li>
           <li><a href="#contact" data-register target="_blank" rel="noopener">Реєстрація на форум</a></li>
         </ul>
       </div>
@@ -528,7 +453,7 @@
 </footer>
 
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Перегляд фото">
-  <img alt="">
+  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
   <button class="lightbox__btn lightbox__close" type="button" data-lb="close" aria-label="Закрити"><svg><use href="#i-x"/></svg></button>
   <button class="lightbox__btn lightbox__prev" type="button" data-lb="prev" aria-label="Попереднє фото"><svg><use href="#i-left"/></svg></button>
   <button class="lightbox__btn lightbox__next" type="button" data-lb="next" aria-label="Наступне фото"><svg><use href="#i-right"/></svg></button>

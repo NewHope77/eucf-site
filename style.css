@@ -89,6 +89,7 @@ p { text-wrap: pretty; }
 
 .section { padding: 104px 0; }
 .section--alt { background: var(--bg-alt); }
+.section--alt + .section--alt { padding-top: 0; } /* same background: no doubled gap */
 .section__head { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 44px; flex-wrap: wrap; }
 .section__head p { color: var(--muted); max-width: 600px; font-size: 18px; margin-top: 12px; }
 .section--dark { background: var(--dark); color: var(--on-dark-muted); position: relative; overflow: hidden; isolation: isolate; }
