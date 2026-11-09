@@ -374,6 +374,11 @@ a.partner { text-decoration: none; color: inherit; }
 /* Contact */
 .contact { display: grid; grid-template-columns: .9fr 1.1fr; gap: 48px; align-items: start; }
 .contact > * { min-width: 0; }
+.contact > :only-child { grid-column: 1 / -1; } /* form hidden: contacts take the full width */
+.contact > :only-child > p { max-width: 640px; }
+@media (min-width: 800px) { .contact > :only-child .contact-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+/* the e-mail is one long word: size it to the card so it never breaks (13.7 = its width in em) */
+@media (max-width: 799px) { .contact .contact-card b { font-size: min(18px, calc((100vw - 138px) / 13.7)); } }
 .contact__info h2 { margin-bottom: 16px; }
 .contact__info > p { font-size: 18px; color: var(--muted); margin-bottom: 26px; }
 .contact-cards { display: grid; gap: 12px; }
@@ -508,6 +513,13 @@ a.contact-card:hover { border-color: var(--accent); transform: translateY(-3px);
   .lightbox { padding: 64px 10px; }
   .lightbox__prev, .lightbox__next { top: auto; bottom: 10px; translate: none; width: 46px; height: 46px; }
   .lightbox__count { bottom: 24px; }
+}
+
+/* small phones: the e-mail address must not break in the middle */
+@media (max-width: 374px) {
+  .contact-card { padding: 16px; gap: 12px; }
+  .contact-card__ico { width: 40px; height: 40px; }
+  .contact .contact-card b { font-size: min(18px, calc((100vw - 118px) / 13.7)); }
 }
 
 /* very small phones (320 px): header with the EN/UA switch must still fit */
