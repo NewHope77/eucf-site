@@ -250,7 +250,7 @@ p { text-wrap: pretty; }
 
 /* Marquee */
 .marquee { border-block: 1px solid var(--line); background: var(--bg-alt); overflow: hidden; padding: 18px 0; }
-.marquee__track { display: flex; gap: 48px; width: max-content; animation: marquee 40s linear infinite; }
+.marquee__track { display: flex; gap: 48px; width: max-content; animation: marquee 80s linear infinite; /* each half holds the list twice, so it is wider than a 2560 screen */ }
 .marquee:hover .marquee__track { animation-play-state: paused; }
 .marquee__track span { display: inline-flex; align-items: center; font-weight: 800; font-size: 19px; color: var(--heading); white-space: nowrap; letter-spacing: -.01em; }
 .marquee__track span::after { content: "★"; color: var(--accent); font-size: 16px; margin-left: 48px; }
