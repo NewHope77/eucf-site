@@ -14,7 +14,7 @@
   document.documentElement.classList.add('js');
   try { var t = localStorage.getItem('theme'); if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
 </script>
-<link rel="stylesheet" href="../style.css?v=21">
+<link rel="stylesheet" href="../style.css?v=24">
 </head>
 <body>
 
@@ -48,6 +48,7 @@
     </a>
     <nav class="nav" aria-label="Головне меню">
       <a href="#about">Про форум</a>
+      <a href="#speakers">Спікери</a>
       <a href="#program">Програма</a>
       <a href="#gallery">Галерея</a>
       <a href="#contact">Контакти</a>
@@ -77,6 +78,7 @@
     </div>
     <nav aria-label="Мобільне меню">
       <a href="#about" data-drawer-close>Про форум</a>
+      <a href="#speakers" data-drawer-close>Спікери</a>
       <a href="#program" data-drawer-close>Програма</a>
       <a href="#gallery" data-drawer-close>Галерея</a>
       <a href="#contact" data-drawer-close>Контакти</a>
@@ -186,6 +188,103 @@
 </section>
 
 <!-- Блок 3: розклад -->
+<section class="section section--alt" id="speakers">
+  <div class="container">
+    <div class="section__head" data-reveal>
+      <div>
+        <span class="eyebrow">Спікери</span>
+        <h2>Ключові спікери</h2>
+      </div>
+    </div>
+    <div class="speakers">
+      <article class="speaker" data-reveal>
+        <div class="avatar"><span class="avatar__ring"></span><span class="avatar__in"><img class="avatar__img" src="../media/speakers/picierno.webp" alt="Піна Пічерно" width="400" height="500" loading="lazy" decoding="async"></span></div>
+        <div class="speaker__body">
+          <h3>Піна Пічерно</h3>
+          <p>Віцепрезидентка Європейського Парламенту, депутатка Європарламенту (Італія, Renew Europe)</p>
+        </div>
+      </article>
+      <article class="speaker" data-reveal style="--d:0.08s">
+        <div class="avatar"><span class="avatar__ring"></span><span class="avatar__in"><img class="avatar__img" src="../media/speakers/toveri.webp" alt="Пекка Товері" width="400" height="500" loading="lazy" decoding="async"></span></div>
+        <div class="speaker__body">
+          <h3>Пекка Товері</h3>
+          <p>Голова Делегації Європарламенту в Парламентському комітеті асоціації ЄС-Україна, депутат Європарламенту (Фінляндія, EPP)</p>
+        </div>
+      </article>
+      <article class="speaker" data-reveal style="--d:0.16s">
+        <div class="avatar"><span class="avatar__ring"></span><span class="avatar__in"><img class="avatar__img" src="../media/speakers/reuten.webp" alt="Тейс Рейтен" width="400" height="500" loading="lazy" decoding="async"></span></div>
+        <div class="speaker__body">
+          <h3>Тейс Рейтен</h3>
+          <p>Тіньовий доповідач щодо України в Європарламенті, депутат Європарламенту (Нідерланди, S&amp;D)</p>
+        </div>
+      </article>
+      <article class="speaker" data-reveal style="--d:0.24s">
+        <div class="avatar"><span class="avatar__ring"></span><span class="avatar__in"><img class="avatar__img" src="../media/speakers/poznaks.webp" alt="Рейніс Познякс" width="400" height="500" loading="lazy" decoding="async"></span></div>
+        <div class="speaker__body">
+          <h3>Рейніс Познякс</h3>
+          <p>Член Делегації Європарламенту в Парламентському комітеті асоціації ЄС-Україна, депутат Європарламенту (Латвія, ECR)</p>
+        </div>
+      </article>
+      <article class="speaker" data-reveal>
+        <div class="avatar"><span class="avatar__ring"></span><span class="avatar__in"><img class="avatar__img" src="../media/speakers/sovndal.webp" alt="Віллі Сьовндаль" width="400" height="500" loading="lazy" decoding="async"></span></div>
+        <div class="speaker__body">
+          <h3>Віллі Сьовндаль</h3>
+          <p>Заступник голови Делегації Європарламенту в Парламентському комітеті асоціації ЄС-Україна, депутат Європарламенту (Данія, Greens/EFA)</p>
+        </div>
+      </article>
+      <article class="speaker" data-reveal style="--d:0.08s">
+        <div class="avatar"><span class="avatar__ring"></span><span class="avatar__in"><img class="avatar__img" src="../media/speakers/volker.webp" alt="Курт Волкер" width="400" height="500" loading="lazy" decoding="async"></span></div>
+        <div class="speaker__body">
+          <h3>Курт Волкер</h3>
+          <p>Провідний експерт Центру аналізу європейської політики (CEPA), ексамбасадор США в НАТО</p>
+        </div>
+      </article>
+      <article class="speaker" data-reveal style="--d:0.16s">
+        <div class="avatar"><span class="avatar__ring"></span><span class="avatar__in"><img class="avatar__img" src="../media/speakers/unhurian.webp" alt="Павло Унгурян" width="400" height="500" loading="lazy" decoding="async"></span></div>
+        <div class="speaker__body">
+          <h3>Павло Унгурян</h3>
+          <p>Голова Руху Молитовних сніданків України, Народний депутат України VI і VIII скликань</p>
+        </div>
+      </article>
+      <article class="speaker" data-reveal style="--d:0.24s">
+        <div class="avatar"><span class="avatar__ring"></span><span class="avatar__in"><img class="avatar__img" src="../media/speakers/fountain.webp" alt="Джефф Фонтейн" width="400" height="500" loading="lazy" decoding="async"></span></div>
+        <div class="speaker__body">
+          <h3>Джефф Фонтейн</h3>
+          <p>Директор Центру європейських досліджень імені Шумана (Schuman Centre for European Studies)</p>
+        </div>
+      </article>
+      <article class="speaker" data-reveal>
+        <div class="avatar"><span class="avatar__ring"></span><span class="avatar__in"><img class="avatar__img" src="../media/speakers/karabuta.webp" alt="Сергій Карабута" width="400" height="500" loading="lazy" decoding="async"></span></div>
+        <div class="speaker__body">
+          <h3>Сергій Карабута</h3>
+          <p>Народний депутат України, IX скликання (Верховна Рада України)</p>
+        </div>
+      </article>
+      <article class="speaker" data-reveal style="--d:0.08s">
+        <div class="avatar"><span class="avatar__ring"></span><span class="avatar__in"><img class="avatar__img" src="../media/speakers/sova.webp" alt="Олександр Сова" width="400" height="500" loading="lazy" decoding="async"></span></div>
+        <div class="speaker__body">
+          <h3>Олександр Сова</h3>
+          <p>Народний депутат України, IX скликання (Верховна Рада України)</p>
+        </div>
+      </article>
+      <article class="speaker" data-reveal style="--d:0.16s">
+        <div class="avatar"><span class="avatar__ring"></span><span class="avatar__in"><img class="avatar__img" src="../media/speakers/ghiletchi.webp" alt="Валеріу Гілецький" width="400" height="500" loading="lazy" decoding="async"></span></div>
+        <div class="speaker__body">
+          <h3>Валеріу Гілецький</h3>
+          <p>Президент Європейської християнської політичної партії (ECPP)</p>
+        </div>
+      </article>
+      <article class="speaker" data-reveal style="--d:0.24s">
+        <div class="avatar"><span class="avatar__ring"></span><span class="avatar__in"><img class="avatar__img" src="../media/speakers/orlov.webp" alt="Віталій Орлов" width="400" height="500" loading="lazy" decoding="async"></span></div>
+        <div class="speaker__body">
+          <h3>Віталій Орлов</h3>
+          <p>Координатор European-Ukrainian Christian Forum в Європарламенті, м. Брюссель, Засновник фонду Pray for Europe</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <section class="section section--dark" id="program">
   <div class="container">
     <div class="section__head" data-reveal>
@@ -298,6 +397,7 @@
   </div>
 </section>
 
+<!-- Блок 4: спікери -->
 <!-- Блок 5: медіа та галерея -->
 <section class="section section--alt" id="gallery">
   <div class="container">
@@ -414,6 +514,7 @@
         <h4>Форум</h4>
         <ul>
           <li><a href="#about">Про форум</a></li>
+          <li><a href="#speakers">Спікери</a></li>
           <li><a href="#program">Програма</a></li>
           <li><a href="#gallery">Галерея</a></li>
         </ul>
